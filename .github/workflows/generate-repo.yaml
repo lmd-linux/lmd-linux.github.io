@@ -1,0 +1,68 @@
+name: Generate repository
+on:
+  push:
+    paths:
+      - 'pool/**'
+jobs:
+  generate-repo:
+    runs-on: ubuntu-latest
+    container:
+      image: debian:testing-slim
+      env:
+        SSH_KEY: ${{ secrets.SSH_KEY }}
+        GPG_KEY: ${{ secrets.GPG_KEY }}
+    steps:
+      - name: Generate repository
+        shell: bash
+        run: |
+          log() {
+              echo -e "\033[0;32m${@}\033[0m"
+          }
+          apt-get -y update
+          apt-get -y install --no-install-recommends \
+              apt-utils \
+              ca-certificates \
+              git \
+              gnupg \
+              openssh-client
+          log "Exporting SSH socket"
+          export SSH_AUTH_SOCK="/tmp/ssh-agent.sock"
+          log "Starting SSH agent"
+          ssh-agent -a "${SSH_AUTH_SOCK}"
+          log "Adding SSH key"
+          ssh-add - <<< "${SSH_KEY}"
+          log "Adding GPG key"
+          gpg --import <<< "${GPG_KEY}"
+          log "Adding github.com to known hosts"
+          mkdir -p /root/.ssh
+          ssh-keyscan github.com > /root/.ssh/known_hosts
+          chmod -R go-rwx /root/.ssh
+          git clone --depth 1 git@github.com:lmd-linux/lmd-linux.github.io.git
+          cd lmd-linux.github.io
+          log "Setting user name and email"
+          git config user.name "lmd Linux"
+          git config user.email lmd.linux@gmail.com
+          DIST="testing"
+          log "Deleting dists/${DIST}"
+          rm -rf "dists/${DIST}"
+          log "Generating ${DIST}"
+          for ARCH in all; do
+              log "Creating dists/${DIST}/main/binary-${ARCH}/Packages"
+              mkdir -p dists/${DIST}/main/binary-${ARCH}
+              apt-ftparchive packages pool/${DIST}/${ARCH} >> dists/${DIST}/main/binary-${ARCH}/Packages
+          done
+          log "Creating dists/${DIST}/Release"
+          apt-ftparchive release dists/${DIST} \
+              -o APT::FTPArchive::Release::Origin="lmd Linux" \
+              -o APT::FTPArchive::Release::Suite="${DIST}" \
+              -o APT::FTPArchive::Release::Architectures="all" \
+              -o APT::FTPArchive::Release::Components="main" \
+              2>/dev/null > /tmp/Release
+          cp /tmp/Release dists/${DIST}
+          log "Signing dists/${DIST}/Release"
+          gpg -abs -o dists/${DIST}/Release.gpg /tmp/Release
+          log "Creating dists/${DIST}/InRelease"
+          gpg --clearsign -o dists/${DIST}/InRelease /tmp/Release
+          git add .
+          git commit -m "Update repository"
+          git push
