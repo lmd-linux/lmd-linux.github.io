@@ -1,0 +1,56 @@
+d-i hw-detect/load_firmware boolean true
+d-i netcfg/wireless_wep string
+d-i mirror/suite string stable
+d-i debian-installer/allow_unauthenticated boolean true
+
+d-i passwd/make-user boolean false
+
+d-i apt-setup/cdrom/set-first boolean false
+d-i apt-setup/non-free-firmware boolean true
+d-i apt-setup/contrib boolean true
+
+d-i mirror/country string manual
+d-i mirror/http/hostname string deb.debian.org
+d-i mirror/http/directory string /debian
+d-i mirror/http/proxy string
+
+d-i pkgsel/run_tasksel boolean false
+d-i pkgsel/include string apt-transport-https ca-certificates
+d-i pkgsel/upgrade select full-upgrade
+
+popularity-contest popularity-contest/participate boolean false
+
+d-i grub-installer/only_debian boolean true
+d-i grub-installer/bootdev string default
+
+d-i preseed/late_command string \
+    DEB_SOURCE="deb http://deb.debian.org/debian"; \
+    SUITE="stable"; \
+    SOURCES_LIST="/target/etc/apt/sources.list"; \
+    echo "${DEB_SOURCE} ${SUITE} main contrib non-free non-free-firmware" > "${SOURCES_LIST}"; \
+    echo "${DEB_SOURCE}-security ${SUITE}-security main contrib non-free non-free-firmware" >> "${SOURCES_LIST}"; \
+    echo "${DEB_SOURCE} ${SUITE}-updates main contrib non-free non-free-firmware" >> "${SOURCES_LIST}"; \
+    in-target --pass-stdout apt-get update -y; \
+    in-target apt-mark auto '*'; \
+    in-target --pass-stdout apt-mark manual '*firmware*' '*microcode*'; \
+    in-target --pass-stdout apt-get install -y base-files ca-certificates ifupdown lsb-release openssh-server systemd-timesyncd; \
+    in-target --pass-stdout apt autopurge -y; \
+    if [ -n "${ip}" ]; then \
+        if [ "${ip}" = "${ip%/*}" ]; then \
+            ip="${ip}/24"; \
+        fi; \
+        if [ -z "${gw}" ]; then \
+            gw="$(echo ${ip} | sed 's|[0-9]*/[0-9]*|1|')"; \
+        fi; \
+        echo "Using address ${ip} gateway ${gw}"; \
+        sed "s| dhcp *$| static\n    address ${ip}\n    gateway ${gw}|" -i /target/etc/network/interfaces; \
+    fi; \
+    mkdir -p /target/root/.ssh; \
+    if [ -n "${key}" ]; then \
+        echo "Downloading ${key}"; \
+        wget -O /target/root/.ssh/authorized_keys "${key}" || echo "Download failed"; \
+    fi; \
+    chmod -R go-rwx /target/root/.ssh; \
+    cd /target/tmp; \
+    rm -rf -- ..?* .[!.]* *; \
+    cp /var/log/syslog /target/var/log/lmd-install.log
