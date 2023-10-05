@@ -42,27 +42,28 @@ jobs:
           log "Setting user name and email"
           git config user.name "lmd Linux"
           git config user.email lmd.linux@gmail.com
-          DIST="testing"
-          log "Deleting dists/${DIST}"
-          rm -rf "dists/${DIST}"
-          log "Generating ${DIST}"
-          for ARCH in all; do
-              log "Creating dists/${DIST}/main/binary-${ARCH}/Packages"
-              mkdir -p dists/${DIST}/main/binary-${ARCH}
-              apt-ftparchive packages pool/${DIST}/${ARCH} >> dists/${DIST}/main/binary-${ARCH}/Packages
+          for DIST in testing stable; do
+              log "Deleting dists/${DIST}"
+              rm -rf "dists/${DIST}"
+              log "Generating ${DIST}"
+              for ARCH in all; do
+                  log "Creating dists/${DIST}/main/binary-${ARCH}/Packages"
+                  mkdir -p dists/${DIST}/main/binary-${ARCH}
+                  apt-ftparchive packages pool/${DIST}/${ARCH} >> dists/${DIST}/main/binary-${ARCH}/Packages
+              done
+              log "Creating dists/${DIST}/Release"
+              apt-ftparchive release dists/${DIST} \
+                  -o APT::FTPArchive::Release::Origin="lmd Linux" \
+                  -o APT::FTPArchive::Release::Suite="${DIST}" \
+                  -o APT::FTPArchive::Release::Architectures="all" \
+                  -o APT::FTPArchive::Release::Components="main" \
+                  2>/dev/null > /tmp/Release
+              cp /tmp/Release dists/${DIST}
+              log "Signing dists/${DIST}/Release"
+              gpg -abs -o dists/${DIST}/Release.gpg /tmp/Release
+              log "Creating dists/${DIST}/InRelease"
+              gpg --clearsign -o dists/${DIST}/InRelease /tmp/Release
           done
-          log "Creating dists/${DIST}/Release"
-          apt-ftparchive release dists/${DIST} \
-              -o APT::FTPArchive::Release::Origin="lmd Linux" \
-              -o APT::FTPArchive::Release::Suite="${DIST}" \
-              -o APT::FTPArchive::Release::Architectures="all" \
-              -o APT::FTPArchive::Release::Components="main" \
-              2>/dev/null > /tmp/Release
-          cp /tmp/Release dists/${DIST}
-          log "Signing dists/${DIST}/Release"
-          gpg -abs -o dists/${DIST}/Release.gpg /tmp/Release
-          log "Creating dists/${DIST}/InRelease"
-          gpg --clearsign -o dists/${DIST}/InRelease /tmp/Release
           git add .
           git commit -m "Update repository"
           git push

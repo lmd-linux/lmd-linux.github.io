@@ -20,7 +20,7 @@ EOF
 
 # Add lmd repository
 cat << EOF > /target/etc/apt/sources.list.d/lmd.list
-deb https://lmd-linux.github.io/ testing main
+deb https://lmd-linux.github.io/ stable main
 EOF
 
 # Add lmd and Google keys
