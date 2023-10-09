@@ -45,7 +45,7 @@ and GNOME Keyring which makes the former fail to start on the first login, and h
 shutdown. All will be fine after that.
 
 
-# Notable packages
+# Optional packages
 
 
 ## `lmd-japanese-input`
@@ -60,6 +60,22 @@ sudo apt install lmd-japanese-input
 ```
 
 Then log out and back in.
+
+
+## `intel-undervolt`
+
+Undervolt Intel CPU Core generations 6th to 10th and some others. Note that using the daemon mode
+to set a performance hint may conflict with `tlp` which is automatically installed by lmd Linux on
+laptops.
+
+Install with:
+
+```shell
+sudo apt install intel-undervolt
+```
+
+Reboot, read the [instructions](https://github.com/lmd-linux/intel-undervolt/blob/master/README.md),
+then edit `/etc/intel-undervolt.conf` to increase your undervolt little by little.
 
 
 ## `lmd-nomitigations`
