@@ -46,7 +46,7 @@ jobs:
               log "Deleting dists/${DIST}"
               rm -rf "dists/${DIST}"
               log "Generating ${DIST}"
-              for ARCH in all; do
+              for ARCH in all amd64; do
                   log "Creating dists/${DIST}/main/binary-${ARCH}/Packages"
                   mkdir -p dists/${DIST}/main/binary-${ARCH}
                   apt-ftparchive packages pool/${DIST}/${ARCH} >> dists/${DIST}/main/binary-${ARCH}/Packages
