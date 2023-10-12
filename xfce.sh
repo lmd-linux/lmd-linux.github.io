@@ -51,6 +51,7 @@ apt autopurge -y
 rm -rf /etc/network
 sed 's/[ \t]\+/ /g' -i /etc/fstab
 sed '/ \/ btrfs /{p;s/^\([^ ]*\) \/ \(.*\)rootfs/\1 \/home \2home/;}' -i /etc/fstab
+env | grep '^LANG=' > /etc/locale.conf
 EOF
 
 # Run post-install script in target chroot
