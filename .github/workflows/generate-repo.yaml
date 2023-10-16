@@ -2,6 +2,7 @@ name: Generate repository
 on:
   push:
     paths:
+      - '.github/workflows/generate-repo.yaml'
       - 'pool/**'
 jobs:
   generate-repo:
@@ -43,10 +44,16 @@ jobs:
           git config user.name "lmd Linux"
           git config user.email lmd.linux@gmail.com
           for DIST in testing stable; do
+              if ! [[ -d pool/${DIST} ]]; then
+                  continue
+              fi
               log "Deleting dists/${DIST}"
               rm -rf "dists/${DIST}"
               log "Generating ${DIST}"
               for ARCH in all amd64; do
+                  if ! [[ -d pool/${DIST}/${ARCH} ]]; then
+                      continue
+                  fi
                   log "Creating dists/${DIST}/main/binary-${ARCH}/Packages"
                   mkdir -p dists/${DIST}/main/binary-${ARCH}
                   apt-ftparchive packages pool/${DIST}/${ARCH} >> dists/${DIST}/main/binary-${ARCH}/Packages
