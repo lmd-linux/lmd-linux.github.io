@@ -33,7 +33,12 @@ d-i preseed/late_command string \
     in-target --pass-stdout apt-get update -y; \
     in-target apt-mark auto '*'; \
     in-target --pass-stdout apt-mark manual '*firmware*' '*microcode*'; \
-    in-target --pass-stdout apt-get install -y base-files ca-certificates ifupdown lsb-release openssh-server systemd-timesyncd; \
+    in-target --pass-stdout apt-get install -y base-files; \
+    in-target --pass-stdout apt-get install -y ca-certificates; \
+    in-target --pass-stdout apt-get install -y ifupdown; \
+    in-target --pass-stdout apt-get install -y lsb-release; \
+    in-target --pass-stdout apt-get install -y openssh-server; \
+    in-target --pass-stdout apt-get install -y systemd-timesyncd; \
     in-target --pass-stdout apt autopurge -y; \
     if [ -n "${ip}" ]; then \
         if [ "${ip}" = "${ip%/*}" ]; then \
