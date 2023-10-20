@@ -1,0 +1,36 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Architectures: all
+Components: main
+Date: Fri, 20 Oct 2023 03:53:19 +0000
+Origin: lmd Linux
+Suite: stable
+MD5Sum:
+ 8b0b425ab12da0c59d81fe2ae698d959             5987 main/binary-all/Packages
+ 416c6fec9571302aa8e698101ba78db2             2270 main/binary-amd64/Packages
+SHA1:
+ 67be4d59031b3dac5daa88da4f0366a30520dd33             5987 main/binary-all/Packages
+ cd14a51a9108055937dd5822f9383aeca6b9b1f7             2270 main/binary-amd64/Packages
+SHA256:
+ 2a171be4acc03d403ed1aea2fb78bd6816f78022fc78c9b12eb80405d5bbc90f             5987 main/binary-all/Packages
+ 28cc331dc5f5092b0e3f099d1abb87144c913be59f2b1fa5fcaae0db75978b82             2270 main/binary-amd64/Packages
+SHA512:
+ 342bd23bbf3d71db524d858add57255a119677989037d4be9c4c0fb945b13bf6bc3f5bb2060d2417eb83c6ffe87d2f2c03528009c1cc87f2374ba9edd4ab86c4             5987 main/binary-all/Packages
+ eff045ad09eb197554f79aab3a4fcf202f93a8f15a8df0a6692712a05472951e7b88230d163c30726bf7bfded3f6ac52bf8480a3659657fc304ebcd1276cbb56             2270 main/binary-amd64/Packages
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEE63GKX3RNG81fSULR4Tprt5qPLvQFAmUx+a8ACgkQ4Tprt5qP
+LvQo5A/9FrEN9GBC1C3YhG2pTQ0LBQdgYDUQE4u0MOkGnlzoaB5w8CnqtylTRoey
+/i182ch2DL9IRs7+V0/0izIYpa7AFYKsXwLiGTdSXTD8oyDJpy+HGObh5zdvupIT
+Gx0+LF+nbATIsGwli3gFqloqCxa5x1dtKV7/oB9vz7FHOxnMNsaa4dBKuMpEaT+d
+2iKPClU7yyOQSfaw/dAabX5aT4+mN/rknoUwD8Rv8+4Bk7YfNt2goyRnxjkh4QHK
+9lCAHno+KqYa5k/uV7ZE0ciCatooO6vkMuc6PsVRUHh10PvZUFkcHHLlZQW7lhGE
+Xr1FHjjGmULRNmTdH/tilspRcB9qJ+tlHyx+hwiAhMMJtkz/m5TqVot6nwbmjfbv
+XNU4eSRsYH9RRS+bmYEF61GEtjsFOU+ACnRtkhMGelOTR3jWhZs7MTPy9rXXkAZe
++ibjDmJ+dPP1lyzFAgdAYp2v5Fgkq/YqCvXvTbY7jvdKh0ZyZEMJ0bAuIe4jkv0G
+xcRQCOpSyF+DbzHEBui3y/GDxFJfyh0eiBajkHXRbAKxDBSigdEih7zPNTG77jJH
+eAZ4O+ZJNYlbZuedxqDzsRVdUV/WXnKTDVpGJ3lH8eTO/huOf89jLuatp76dovsY
+7Z42KaI+/J86dNjOEqvDIjhuZv6mktmoOV+DPpTWvGgmjOfb4GY=
+=rx0h
+-----END PGP SIGNATURE-----

@@ -1,0 +1,142 @@
+Package: lmd-cmdline
+Architecture: all
+Version: 1
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 18
+Depends: bash-completion, git, man, powerline, powerline-gitstatus, tmux, vim-addon-manager, vim-nox
+Filename: pool/stable/all/lmd-cmdline_1_all.deb
+Size: 2564
+MD5sum: 00444445352f95949cf55778a5faed1e
+SHA1: 76caf45113c3f8a03856ec2783163ee1546f208e
+SHA256: 449d0c1cbaa3e77deba5abccb2c3412b1affa2cda78701884686319fa3f3962a
+SHA512: af71b8926d994e4cfb167ad7956a6b6408bdc799bb3c7dde59ae3022c4a02113403b6e8304678c1e2a70da2cd900732f6f8351c52df44f35e2a3336219dc834e
+Description: command-line tools
+ A collection of useful command-line tools and their default configuration
+
+Package: lmd-desktop
+Architecture: all
+Version: 1
+Multi-Arch: foreign
+Priority: important
+Section: metapackages
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 9
+Depends: lmd-minimal, network-manager, sudo
+Recommends: firmware-linux, fonts-noto, gvfs-backends, gvfs-fuse, i965-va-driver-shaders, intel-media-va-driver-non-free, lmd-cmdline, lmd-update, pipewire-audio, unrar, unzip
+Filename: pool/stable/all/lmd-desktop_1_all.deb
+Size: 1660
+MD5sum: f98b6db078e8612c5bacf87daaa49125
+SHA1: 8d742adeb51474523aba02fe0765ce758e6131fa
+SHA256: 8bcdd2dbf160241490628cb073d24d55b7ff6cc8d29b5a6ebf14a8842c964e8f
+SHA512: 4e207a4fc291eb381ce60bfccbfbff41edf36fbb094159e5cae9b94219d776109e44f5b508435568956a4b2b39ce28a0a3d8f57d5908735b6e58c0c3dd7487a3
+Homepage: https://lmd-linux.github.io/lmd-desktop
+Description: Packages for lmd Linux desktop
+
+Package: lmd-japanese-input
+Architecture: all
+Version: 1
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 17
+Depends: fcitx5-mozc, fonts-noto-cjk, fonts-noto-cjk-extra, lmd-desktop
+Filename: pool/stable/all/lmd-japanese-input_1_all.deb
+Size: 2412
+MD5sum: 8804ff0e6b00a136e3bfd227e019265e
+SHA1: c3ea53591bbdee9935ac8d0c1e2acb3edbc14c7f
+SHA256: 328c9c9c027c4f088ad28e1e01308963c586e22c9c62ee39026ea42fc4a8ac08
+SHA512: fbc3d6b555b7ec060e558b63e16a16e843d80fff4ab5b7c849369f555ed13455d943d54a69eb3139354f550ec4b3a25f557fe44fe27a0d90f2c4dd517865b031
+Description: Japanese input for lmd Linux
+ Tools and configuration for Japanese input in lmd Linux
+ The default toggling key combination is Super+Space (Super is sometimes called the Windows key).
+
+Package: lmd-minimal
+Architecture: all
+Version: 1
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 15
+Depends: apt-transport-https, base-files, ca-certificates, lsb-release, systemd-timesyncd
+Filename: pool/stable/all/lmd-minimal_1_all.deb
+Size: 1952
+MD5sum: e1eab46aa50adc883f8233f0a7e6d38d
+SHA1: 2deaad188264f39e1ae5b67bb889608e57eb2e3f
+SHA256: dfe017043de6a8019cad23d78dec1c3d7c42d27dd47c692235160efb092dbda9
+SHA512: 09e7381c26637b818d42424074cc2cc2cec528bd1c2b4543143f9b9e31083b07fa9df381f15bf12d9f6b89d377b873f08057f41d8377ae3e94e2564bacbf32b7
+Description: Minimal set of packages for lmd Linux
+ Packages and configuration for a minimal lmd Linux installation
+
+Package: lmd-nomitigations
+Architecture: all
+Version: 1
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 16
+Depends: lmd-desktop
+Filename: pool/stable/all/lmd-nomitigations_1_all.deb
+Size: 1792
+MD5sum: a562cc22a036a1233786a775ab46c762
+SHA1: 4601ecf08c2afaa35d50a7d9774e48cf5d7f6ff7
+SHA256: b63cc0ef5f9be505181f5286a102d5dffc1cec965d604b435729f7ea1025e479
+SHA512: 64acf7a42e809b76f53fb24e56dff84cdaf7675231ddd7263c7acc2cc19999057278e932263d94818c0cab6530f6cb0d5c65bd5453a4de7ffca548bb94641b33
+Description: Disable mitigations
+ Disable CPU and i915 mitigations
+ Not recommended for use in most situations
+
+Package: lmd-server
+Architecture: all
+Version: 1
+Multi-Arch: foreign
+Priority: important
+Section: metapackages
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 9
+Depends: lmd-minimal, ifupdown, openssh-server
+Filename: pool/stable/all/lmd-server_1_all.deb
+Size: 1548
+MD5sum: aca282c1feeb043609610383c115a9b5
+SHA1: a3e85edc29a333b962b75726e57a1728d6bb1b46
+SHA256: ab58c16c61e628fcb07584830ede112d8f11f7dcb11b399c0ebe07aac2ea2cc2
+SHA512: 16249208ea2becf9422cb0318702b3c3a342ccdeb8f703780215c8c5b62ee40618d300fa40fc1c6eb5d3190a029294c4fae5b039890b8194b3f4e6f423f7a79f
+Homepage: https://lmd-linux.github.io/lmd-server
+Description: Packages for lmd Linux server
+
+Package: lmd-update
+Architecture: all
+Version: 1
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 44
+Depends: iputils-ping
+Filename: pool/stable/all/lmd-update_1_all.deb
+Size: 7452
+MD5sum: 522c78e8faec06351dcd0c9016ad927a
+SHA1: 861d7fe66e7b65b746864982185d461f1f5ddf00
+SHA256: 1356bf265db1c57e3df19f0134adf97052d6f018d68ab9aa8cd09e92cd86b3d9
+SHA512: bd5d2eb488d17e47a01062cf9c0248c6abfaa709405c13f88de4c6f4369fe1a7a01e5a74c73f2112f5161b3084a7e2e40e1b79b5e5de9b3eb19db956843203f6
+Description: automatic updates for lmd Linux
+ Services, scripts and configuration for automatic updates of lmd Linux
+
+Package: lmd-xfce
+Architecture: all
+Version: 1
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 64
+Depends: lmd-desktop, elementary-xfce-icon-theme, greybird-gtk-theme, light-locker, lightdm-gtk-greeter, network-manager-gnome, xfce4, xfce4-notifyd, xfce4-power-manager, xfce4-terminal, xfce4-whiskermenu-plugin
+Recommends: blueman, galculator, menulibre, mousepad, mugshot, mpv, pkexec, ristretto, seahorse, thunar-archive-plugin, tumbler-plugins-extra, xfce4-screenshooter
+Filename: pool/stable/all/lmd-xfce_1_all.deb
+Size: 20936
+MD5sum: 3f553c014336aa0da8abe9335c77e4fc
+SHA1: 86a6d340739bb62d4a31cac40a2fbcaddcc55a1e
+SHA256: 7555187c6c45e7c3eadeef31bf49be17d8fc843503fea71f4d0ce3d18c26deb0
+SHA512: 5150d93c0c8d25268b22e2de7831be053aaa8070c2d5a110a8ed67cdcb26236bb98f4df10879cb22fe6248388dc6b081a444e97483695ba1736f471b64b426f7
+Description: XFCE for lmd Linux
+ Collection of XFCE packages and configurations for lmd Linux
+
