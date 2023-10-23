@@ -1,0 +1,13 @@
+Architectures: all
+Components: main
+Date: Mon, 23 Oct 2023 05:24:01 +0000
+Origin: lmd Linux
+Suite: testing
+MD5Sum:
+ 4fa9ee77cfef2ca5e1f8cf7f0eb9c972              780 main/binary-amd64/Packages
+SHA1:
+ ed1d204c883ef9f9757360bc40addd009bbbe65d              780 main/binary-amd64/Packages
+SHA256:
+ a9d9f8293581176d597ba0a2174a75bee1a183af448044df720a416507dee482              780 main/binary-amd64/Packages
+SHA512:
+ 861d4886046be0f58c96a7d6200f49ee0ee523e952a1888092d908a88b69c3dbd911e7397395f838a6c2a4408ae4902ede8ec51e995295e5804130a12036d0bb              780 main/binary-amd64/Packages

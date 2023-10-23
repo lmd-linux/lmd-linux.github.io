@@ -1,0 +1,32 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Architectures: all
+Components: main
+Date: Mon, 23 Oct 2023 05:24:01 +0000
+Origin: lmd Linux
+Suite: testing
+MD5Sum:
+ 4fa9ee77cfef2ca5e1f8cf7f0eb9c972              780 main/binary-amd64/Packages
+SHA1:
+ ed1d204c883ef9f9757360bc40addd009bbbe65d              780 main/binary-amd64/Packages
+SHA256:
+ a9d9f8293581176d597ba0a2174a75bee1a183af448044df720a416507dee482              780 main/binary-amd64/Packages
+SHA512:
+ 861d4886046be0f58c96a7d6200f49ee0ee523e952a1888092d908a88b69c3dbd911e7397395f838a6c2a4408ae4902ede8ec51e995295e5804130a12036d0bb              780 main/binary-amd64/Packages
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEE63GKX3RNG81fSULR4Tprt5qPLvQFAmU2A3EACgkQ4Tprt5qP
+LvRP5w//WmbbKJX/ZMyObR2yLXYRFuKB0PKYoZ1uN6v7KU02xfr1/imjVmEVvkVt
+A8sOVmee0I8amxghQKGgXrHwWCe+nerllRGoTYxJfxP7BEzZ+2FiwHXWCoqx/OEz
+qYkHQngGc/oZ3hY6nZT2hpFqqD8JrpN9rR4Rp7m3XQ55O66QAdU1T4fjMrQN8YXl
+fFEaEOsbmPEcqatQ19zMfnL4Rg/TEZDo90vBKuJ3ndSp9TYxNnEQKQ8eQR38yi6F
+cgk+yv8iEJzJ1wTqtyUi6lZDCzbDezYxMGidkgv0SkrUm5EEQZ7Buw8pmmkbJXLZ
+adv79yFgLUWV05dycJd7GDVQMzWKiMn3ni/3QVgnHSlntvr3m27VzBdEH36yYq78
+teZqEJG2bkyF0pUtwioTXunjV45SDlMNtU3Pw5JGrANzdYKrFSTkCiTwKySdj0VC
+6OXG1BSlaJs0thI9AhKdHYbTzAEnMYPzmIkTthgylgSD2YN/iEkHXmnW8j5vooz5
+ccdLBHSc+PyMp1bzIZRWT+bAUnh30oP056++5xj7edBJPVaT7NheWvqNLuOunEBK
+NBB02pODTqXdfmJ57r9tDdz6WYS98H9O+k1Ero2j8RYg/FeF6yPwgVDwxN25kFhw
+YCFpx3oFxt5Yh+L1QJCKRrDgO5NCQzvxobl38VO8oFlyoqbiO0g=
+=iUlw
+-----END PGP SIGNATURE-----

@@ -1,0 +1,19 @@
+Package: intel-undervolt
+Architecture: amd64
+Version: 1.7
+Priority: standard
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 114
+Depends: libc6
+Filename: pool/testing/amd64/intel-undervolt_1.7_amd64.deb
+Size: 32020
+MD5sum: ef1aef20423ad289cf97de6315a95ecf
+SHA1: 56d5da2c39c25994c3fb587b4dfbef5d03188af6
+SHA256: 3304e90c9043fdc42b3edcdb7fa28decaa46244b547b3e6ed07d5adbbdd2f14b
+SHA512: 6dfd7c29f4e51138bb2e6cff87891a20d742082eb8438a832a26aea269100a1f8d3ad59f42988af01ef31bf9859064834f9e466ab9756f60792e52f7b18abe77
+Description: Undervolt Intel CPUs
+ Tool for undervolting and altering throttle limits of Intel CPUs.
+ Undervolting works on Haswell and newer CPUs and based on the content of
+ [this article](https://github.com/mihic/linux-intel-undervolt).
+
