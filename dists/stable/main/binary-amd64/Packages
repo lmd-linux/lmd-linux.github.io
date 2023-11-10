@@ -1,18 +1,18 @@
 Package: heroic
 Architecture: amd64
-Version: 2.9.2
+Version: 2.10.0
 Priority: optional
-Section: games
+Section: default
 Maintainer: Heroic Games Launcher <heroicgameslauncher@protonmail.com>
-Installed-Size: 366513
-Depends: curl
+Installed-Size: 379113
+Depends: libgtk-3-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libatspi2.0-0, libuuid1, libsecret-1-0
 Recommends: libappindicator3-1
-Filename: pool/stable/amd64/heroic_2.9.2_amd64.deb
-Size: 102107058
-MD5sum: b9ee3d041069e0c29c62fed1186df6a1
-SHA1: b3c6afb5abcf784544a8c99302e463c3f3aabe39
-SHA256: 9c07f5265c3663febb83c8866dfdd7dabeb180cefbafedfb64152c9848e5b4ba
-SHA512: 699b367a1ee96de9ca33bc44c8ce31beb2e0f7211741c40842c639d405badd53af3467eeb90bfb829b613e6a61d87b63d6dc66dcd1cb3c43f48aa7b796b83666
+Filename: pool/stable/amd64/heroic_2.10.0_amd64.deb
+Size: 103468692
+MD5sum: e758b4aa0d67751f2c47df1c07062455
+SHA1: 37f99548a0461333fdd9e0a9b1d2636eb1711f44
+SHA256: 826761974fbf94fecd987dd4bdbd06534a1e068c23a36d8850880c059391a40f
+SHA512: 9ca596347ca1f7fc76e8c1697b490b070421570e10f06a7d2774cd2ba5e6704355a2334c08ccc0b4841b42dfa17a044eba08294c501e1c9255076fafe11d730a
 Homepage: https://./
 Description: 
   An Open Source Launcher for GOG and Epic Games
