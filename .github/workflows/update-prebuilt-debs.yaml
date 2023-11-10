@@ -1,8 +1,8 @@
 name: Update prebuilt debs
 on:
   push:
-    schedule:
-      - cron: '7 8 * * *'
+  schedule:
+    - cron: '7 8 * * *'
 jobs:
   update-prebuilt-debs:
     runs-on: ubuntu-latest
