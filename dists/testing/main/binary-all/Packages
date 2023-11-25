@@ -1,0 +1,17 @@
+Package: lmd-update
+Architecture: all
+Version: 1
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 44
+Depends: iputils-ping
+Filename: pool/testing/all/lmd-update_1_all.deb
+Size: 7532
+MD5sum: bead7d3a46796d0019325e2c0607b749
+SHA1: cbb38b7f8eb098e4805ea4964b7eac1bde4b563c
+SHA256: f8a45bbbb853eca6082d5fb156da0e8107eead319f2019f91bc9a01967b78cee
+SHA512: fe8b7e6718ae904254d9c3cfc0dd31e56e76f4a2f74e3657428322ae4ba2e159bf34a68f13dfbe35d36b2072eaf37b128231a4e5f4b950d8d20a6e3edcbb5311
+Description: automatic updates for lmd Linux
+ Services, scripts and configuration for automatic updates of lmd Linux
+
