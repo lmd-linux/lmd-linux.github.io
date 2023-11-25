@@ -114,11 +114,11 @@ Maintainer: lmd Linux <lmd.linux@gmail.com>
 Installed-Size: 44
 Depends: iputils-ping
 Filename: pool/stable/all/lmd-update_1_all.deb
-Size: 7452
-MD5sum: 522c78e8faec06351dcd0c9016ad927a
-SHA1: 861d7fe66e7b65b746864982185d461f1f5ddf00
-SHA256: 1356bf265db1c57e3df19f0134adf97052d6f018d68ab9aa8cd09e92cd86b3d9
-SHA512: bd5d2eb488d17e47a01062cf9c0248c6abfaa709405c13f88de4c6f4369fe1a7a01e5a74c73f2112f5161b3084a7e2e40e1b79b5e5de9b3eb19db956843203f6
+Size: 7532
+MD5sum: bead7d3a46796d0019325e2c0607b749
+SHA1: cbb38b7f8eb098e4805ea4964b7eac1bde4b563c
+SHA256: f8a45bbbb853eca6082d5fb156da0e8107eead319f2019f91bc9a01967b78cee
+SHA512: fe8b7e6718ae904254d9c3cfc0dd31e56e76f4a2f74e3657428322ae4ba2e159bf34a68f13dfbe35d36b2072eaf37b128231a4e5f4b950d8d20a6e3edcbb5311
 Description: automatic updates for lmd Linux
  Services, scripts and configuration for automatic updates of lmd Linux
 

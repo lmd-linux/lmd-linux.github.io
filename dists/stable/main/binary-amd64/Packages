@@ -22,17 +22,17 @@ Vendor: Heroic Games Launcher <heroicgameslauncher@protonmail.com>
 Package: intel-undervolt
 Architecture: amd64
 Version: 1.7
-Priority: important
+Priority: standard
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
 Installed-Size: 114
 Depends: libc6
 Filename: pool/stable/amd64/intel-undervolt_1.7_amd64.deb
-Size: 32024
-MD5sum: aa4d3addafaa0413a379903344165d71
-SHA1: a11246573ab1b6938391772ef16ab8a1e47ae404
-SHA256: 006c1d7f7efad954cddfb84034ab389bb06fbea585ecddd41a3dc567b2d0eef0
-SHA512: 1cd295317c51014acc41827ce305e782b73de76a1caf89f993214f2dd1e3fc9552ba4f2e8abf611bb16d1b93f4988bff4cf327bb13925a16de7be54caa02030c
+Size: 32020
+MD5sum: ef1aef20423ad289cf97de6315a95ecf
+SHA1: 56d5da2c39c25994c3fb587b4dfbef5d03188af6
+SHA256: 3304e90c9043fdc42b3edcdb7fa28decaa46244b547b3e6ed07d5adbbdd2f14b
+SHA512: 6dfd7c29f4e51138bb2e6cff87891a20d742082eb8438a832a26aea269100a1f8d3ad59f42988af01ef31bf9859064834f9e466ab9756f60792e52f7b18abe77
 Description: Undervolt Intel CPUs
  Tool for undervolting and altering throttle limits of Intel CPUs.
  Undervolting works on Haswell and newer CPUs and based on the content of
