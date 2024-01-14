@@ -7,11 +7,11 @@ Maintainer: lmd Linux <lmd.linux@gmail.com>
 Installed-Size: 19
 Depends: bash-completion, git, man, powerline, powerline-gitstatus, tmux, vim-addon-manager, vim-nox
 Filename: pool/testing/all/lmd-cmdline_1_all.deb
-Size: 2704
-MD5sum: 0bf889c77b9d2be46683831f21ea3ec3
-SHA1: bc8a59e2b6c422bcae1f162d72d61d34319ed7c8
-SHA256: aa305a50c697179e66133c7344205096aa220b5430edafef888d2d90809e9360
-SHA512: 4552b897360e535e4ce8a5398581148d382744120dbd79f13d0fd1a3372a51cf00cfd5ed5b76af36bc644cecde3b8ddde0614cb105746b06f30014a9dc94db95
+Size: 2688
+MD5sum: bb73d1fd1cb0c1de459d9f06ca02cc9a
+SHA1: 41281de321f160cc408fe4fb8e885a485039852b
+SHA256: 6e802a14fe37d42ed87cf60bc87abd3ebad50b953f1169b4009473f5eb22951c
+SHA512: b9b21a6efd86f824751c50cb43117fd2e8c0fb4fde4760feb6b42b40ba1237d540260fed975a5dc0b4dfd65eefe6b6da1a4016ec78f2ceff0970112cd3542b47
 Description: command-line tools
  A collection of useful command-line tools and their default configuration
 
