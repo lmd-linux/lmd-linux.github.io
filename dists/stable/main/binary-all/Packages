@@ -59,13 +59,13 @@ Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
 Installed-Size: 15
-Depends: apt-transport-https, base-files, ca-certificates, lsb-release, systemd-timesyncd
+Depends: apt-transport-https, base-files, ca-certificates, fontconfig-config, lsb-release, systemd-timesyncd
 Filename: pool/stable/all/lmd-minimal_1_all.deb
-Size: 1992
-MD5sum: a20dcc06997fcfd33873a7304f787275
-SHA1: ee3c635d3467094f29eebbd9d258314f9b627ff0
-SHA256: 2349ca2b9b7995d7eb5acfc221619e618b96979ad02614b9a4e6dc648025bd49
-SHA512: 3c5a625e002a781e14c789770033826668cdca9346dd27f70a0ed5bfea94accbac69a9f9846fcb2016da779554087af42d4fc06526f9ba027544cd3c048c79ec
+Size: 2008
+MD5sum: 56736a8c9e76ff724dfe71aa93d81bad
+SHA1: e71bd96ac312000b3932415090d1bfab4e050da6
+SHA256: aa029d0486ce243359b8ee445917c06923c939535db7d56f85314300faae8fa9
+SHA512: bfaec435aa076b07eb294f63e8f1b2ae866e97fe9fcd3017f1ab1fb14a26dec622614a8d9493e70455c950609740781b700094e0a79fd27aaa2362daf2c707b8
 Description: Minimal set of packages for lmd Linux
  Packages and configuration for a minimal lmd Linux installation
 
