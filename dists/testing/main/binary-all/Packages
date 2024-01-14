@@ -34,6 +34,23 @@ SHA512: d619fabf137929df1632ade91f76cbbb205c93a5743039b13fde91d2f686b004c842f506
 Homepage: https://lmd-linux.github.io/lmd-desktop
 Description: Packages for lmd Linux desktop
 
+Package: lmd-minimal
+Architecture: all
+Version: 1
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 15
+Depends: apt-transport-https, base-files, ca-certificates, lsb-release, systemd-timesyncd
+Filename: pool/testing/all/lmd-minimal_1_all.deb
+Size: 1992
+MD5sum: a20dcc06997fcfd33873a7304f787275
+SHA1: ee3c635d3467094f29eebbd9d258314f9b627ff0
+SHA256: 2349ca2b9b7995d7eb5acfc221619e618b96979ad02614b9a4e6dc648025bd49
+SHA512: 3c5a625e002a781e14c789770033826668cdca9346dd27f70a0ed5bfea94accbac69a9f9846fcb2016da779554087af42d4fc06526f9ba027544cd3c048c79ec
+Description: Minimal set of packages for lmd Linux
+ Packages and configuration for a minimal lmd Linux installation
+
 Package: lmd-update
 Architecture: all
 Version: 1
