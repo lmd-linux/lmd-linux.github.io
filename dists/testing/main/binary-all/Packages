@@ -67,6 +67,24 @@ SHA512: 3c5a625e002a781e14c789770033826668cdca9346dd27f70a0ed5bfea94accbac69a9f9
 Description: Minimal set of packages for lmd Linux
  Packages and configuration for a minimal lmd Linux installation
 
+Package: lmd-nomitigations
+Architecture: all
+Version: 1
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 16
+Depends: lmd-desktop
+Filename: pool/testing/all/lmd-nomitigations_1_all.deb
+Size: 1832
+MD5sum: b2a229a39398424f76c4b58106e3e1a3
+SHA1: c65317d65549ea2b2d3d6a4b231cc9b551521504
+SHA256: d413502e44df9e42e8a7fe8501808cd2a1a2d638033f088f3c1025eff7218724
+SHA512: 901d599a8742d8b2a938e73d8fa9c57db0fc891dd815dec7c56a4d5e9fb6eeed44335455fd5c9a22a86de1e9e2148c5d8e01db4279ea2c7d0e3a014ae9c9e3d4
+Description: Disable mitigations
+ Disable CPU and i915 mitigations
+ Not recommended for use in most situations
+
 Package: lmd-update
 Architecture: all
 Version: 1
