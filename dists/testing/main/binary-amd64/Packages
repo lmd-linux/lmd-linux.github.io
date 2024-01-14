@@ -7,11 +7,11 @@ Maintainer: lmd Linux <lmd.linux@gmail.com>
 Installed-Size: 3015
 Depends: gamemode, gamescope, lmd-desktop, mangohud:i386, mangohud:amd64, mesa-utils, protontricks, retroarch, steam-installer
 Filename: pool/testing/amd64/lmd-gaming_1_amd64.deb
-Size: 1065224
-MD5sum: 01cd8fe29d1f4425877d6d08fa04c087
-SHA1: 8b953061b716c710484abe90eb595fe4718ac27b
-SHA256: 3a4a2db812956e47361e8cd76e4eee8ceba4c00f68a297734e30345f374c4b64
-SHA512: 90c50fc1454222224ef20b549bf656626a6aabd03862ae59326a408488046e9ffab3d097cfe3139407e1ede2917f0b0f315b1fd2793bdb9f1ae60ff6368c965c
+Size: 1063852
+MD5sum: a307ae958adb041b1594d1e641c37a27
+SHA1: 716007cbaae6bd9bec78d6754642b4f354bc923b
+SHA256: 82a231bf8154edd3929a2213c493ab124e6dd95b6c5269982150eed9f5dac945
+SHA512: db79e5033a1f7e138de14a94ad514092cd9f28ed8cfd2c940725060e497087932bb42218daedb6cfccd8049ee678cdcc806024d055b709b286443d8ccbe4715a
 Description: Gaming metapackage for lmd Linux
  Collection of gaming packages and configurations for lmd Linux
 
