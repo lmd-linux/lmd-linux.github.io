@@ -34,6 +34,22 @@ SHA512: d619fabf137929df1632ade91f76cbbb205c93a5743039b13fde91d2f686b004c842f506
 Homepage: https://lmd-linux.github.io/lmd-desktop
 Description: Packages for lmd Linux desktop
 
+Package: lmd-minimal-config
+Architecture: all
+Version: 1
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 15
+Filename: pool/testing/all/lmd-minimal-config_1_all.deb
+Size: 1940
+MD5sum: 318b93424a853c12acb9cea6eb05a9b9
+SHA1: 25bb8e178b24415ae8a2d19b7a3950b7dadb8adc
+SHA256: 4aacd083e8a59bd98f234ba87ca07ab763787afedab18fde5cc4544c62b4745e
+SHA512: 4bf934de81258f942ff40b47fc5fde7069187c449a98d24ca9b07140053e7f0300329a846d93f6be9e3a4a2be9271f11cc24cee00c9108f5e0a85fd4ea382c8c
+Description: Configuration for lmd-minimal
+ Configuration for GRUB, initramfs, profile, etc...
+
 Package: lmd-minimal
 Architecture: all
 Version: 1
