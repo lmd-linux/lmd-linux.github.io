@@ -1,0 +1,5 @@
+#! /bin/bash
+dpkg --add-architecture i386
+apt update
+apt install -y lmd-gaming
+/lib/lmd/update.d/50-heroic update
