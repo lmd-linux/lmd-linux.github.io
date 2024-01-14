@@ -23,14 +23,14 @@ Priority: important
 Section: metapackages
 Maintainer: lmd Linux <lmd.linux@gmail.com>
 Installed-Size: 9
-Depends: dbus-broker, lmd-minimal, network-manager, sudo
-Recommends: firmware-linux, fonts-noto, gvfs-backends, gvfs-fuse, i965-va-driver-shaders, intel-media-va-driver-non-free, lmd-cmdline, lmd-update, pipewire-audio, unrar, unzip
+Depends: dbus-broker, lmd-minimal, lmd-update, network-manager, sudo
+Recommends: firmware-linux, fonts-noto, gvfs-backends, gvfs-fuse, i965-va-driver-shaders, intel-media-va-driver-non-free, lmd-cmdline, pipewire-audio, unrar, unzip
 Filename: pool/testing/all/lmd-desktop_1_all.deb
 Size: 1668
-MD5sum: 8c3600b077401ce80f5909f25301144c
-SHA1: 75901789bb9b529414fd14939a0f0600b8fcb581
-SHA256: fcd4042104f4563b1c4afb462a53630fe968160e75172b1e1fbac2a27040e136
-SHA512: f49584fcf074adf0d5c2f4683764825b1821b5e1e245457e1f8d0f695fd013a32f9d5c9016742abf74a902941afd4cea4f85bdd8c5177694d2abdf83b8873ed8
+MD5sum: bdcee2078c538bbafccad029cb31b76f
+SHA1: ecca7bc25b19501d3759b0c95b5060cf0d9e2f58
+SHA256: 52c1e7be7c6a022409ee3c49d48a966dbc86f348f80b3162566df21b2bf65fa8
+SHA512: d619fabf137929df1632ade91f76cbbb205c93a5743039b13fde91d2f686b004c842f5064bb16a1baf2f246422d64d5c0deb4b27f0e6a270ff048bf470f057b3
 Homepage: https://lmd-linux.github.io/lmd-desktop
 Description: Packages for lmd Linux desktop
 
