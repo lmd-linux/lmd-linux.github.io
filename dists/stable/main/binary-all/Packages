@@ -4,14 +4,14 @@ Version: 1
 Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
-Installed-Size: 18
+Installed-Size: 19
 Depends: bash-completion, git, man, powerline, powerline-gitstatus, tmux, vim-addon-manager, vim-nox
 Filename: pool/stable/all/lmd-cmdline_1_all.deb
-Size: 2564
-MD5sum: 00444445352f95949cf55778a5faed1e
-SHA1: 76caf45113c3f8a03856ec2783163ee1546f208e
-SHA256: 449d0c1cbaa3e77deba5abccb2c3412b1affa2cda78701884686319fa3f3962a
-SHA512: af71b8926d994e4cfb167ad7956a6b6408bdc799bb3c7dde59ae3022c4a02113403b6e8304678c1e2a70da2cd900732f6f8351c52df44f35e2a3336219dc834e
+Size: 2688
+MD5sum: bb73d1fd1cb0c1de459d9f06ca02cc9a
+SHA1: 41281de321f160cc408fe4fb8e885a485039852b
+SHA256: 6e802a14fe37d42ed87cf60bc87abd3ebad50b953f1169b4009473f5eb22951c
+SHA512: b9b21a6efd86f824751c50cb43117fd2e8c0fb4fde4760feb6b42b40ba1237d540260fed975a5dc0b4dfd65eefe6b6da1a4016ec78f2ceff0970112cd3542b47
 Description: command-line tools
  A collection of useful command-line tools and their default configuration
 
@@ -23,14 +23,14 @@ Priority: important
 Section: metapackages
 Maintainer: lmd Linux <lmd.linux@gmail.com>
 Installed-Size: 9
-Depends: lmd-minimal, network-manager, sudo
-Recommends: firmware-linux, fonts-noto, gvfs-backends, gvfs-fuse, i965-va-driver-shaders, intel-media-va-driver-non-free, lmd-cmdline, lmd-update, pipewire-audio, unrar, unzip
+Depends: dbus-broker, lmd-minimal, lmd-update, network-manager, sudo
+Recommends: firmware-linux, fonts-noto, gvfs-backends, gvfs-fuse, i965-va-driver-shaders, intel-media-va-driver-non-free, lmd-cmdline, pipewire-audio, unrar, unzip
 Filename: pool/stable/all/lmd-desktop_1_all.deb
-Size: 1660
-MD5sum: f98b6db078e8612c5bacf87daaa49125
-SHA1: 8d742adeb51474523aba02fe0765ce758e6131fa
-SHA256: 8bcdd2dbf160241490628cb073d24d55b7ff6cc8d29b5a6ebf14a8842c964e8f
-SHA512: 4e207a4fc291eb381ce60bfccbfbff41edf36fbb094159e5cae9b94219d776109e44f5b508435568956a4b2b39ce28a0a3d8f57d5908735b6e58c0c3dd7487a3
+Size: 1668
+MD5sum: bdcee2078c538bbafccad029cb31b76f
+SHA1: ecca7bc25b19501d3759b0c95b5060cf0d9e2f58
+SHA256: 52c1e7be7c6a022409ee3c49d48a966dbc86f348f80b3162566df21b2bf65fa8
+SHA512: d619fabf137929df1632ade91f76cbbb205c93a5743039b13fde91d2f686b004c842f5064bb16a1baf2f246422d64d5c0deb4b27f0e6a270ff048bf470f057b3
 Homepage: https://lmd-linux.github.io/lmd-desktop
 Description: Packages for lmd Linux desktop
 
@@ -43,11 +43,11 @@ Maintainer: lmd Linux <lmd.linux@gmail.com>
 Installed-Size: 17
 Depends: fcitx5-mozc, fonts-noto-cjk, fonts-noto-cjk-extra, lmd-desktop
 Filename: pool/stable/all/lmd-japanese-input_1_all.deb
-Size: 2412
-MD5sum: 8804ff0e6b00a136e3bfd227e019265e
-SHA1: c3ea53591bbdee9935ac8d0c1e2acb3edbc14c7f
-SHA256: 328c9c9c027c4f088ad28e1e01308963c586e22c9c62ee39026ea42fc4a8ac08
-SHA512: fbc3d6b555b7ec060e558b63e16a16e843d80fff4ab5b7c849369f555ed13455d943d54a69eb3139354f550ec4b3a25f557fe44fe27a0d90f2c4dd517865b031
+Size: 2452
+MD5sum: 9d5bfc08ebdaf17bea871b2b564c234a
+SHA1: e9ff7f1bb29cad32986e551028bfd236c21357c2
+SHA256: 23d83f2608361e69e54db8849a62664a36f9a91e32f6bf934ed977f1c3e90a79
+SHA512: 045377f951eaf7c8a3a54af5e1e2f3172c8d493ac8356e541c58faacaf7d620009bc1b018790394ee194aee6f34fb71c1ab55d8d11a592fe2c01b5fc3e59903d
 Description: Japanese input for lmd Linux
  Tools and configuration for Japanese input in lmd Linux
  The default toggling key combination is Super+Space (Super is sometimes called the Windows key).
@@ -61,11 +61,11 @@ Maintainer: lmd Linux <lmd.linux@gmail.com>
 Installed-Size: 15
 Depends: apt-transport-https, base-files, ca-certificates, lsb-release, systemd-timesyncd
 Filename: pool/stable/all/lmd-minimal_1_all.deb
-Size: 1952
-MD5sum: e1eab46aa50adc883f8233f0a7e6d38d
-SHA1: 2deaad188264f39e1ae5b67bb889608e57eb2e3f
-SHA256: dfe017043de6a8019cad23d78dec1c3d7c42d27dd47c692235160efb092dbda9
-SHA512: 09e7381c26637b818d42424074cc2cc2cec528bd1c2b4543143f9b9e31083b07fa9df381f15bf12d9f6b89d377b873f08057f41d8377ae3e94e2564bacbf32b7
+Size: 1992
+MD5sum: a20dcc06997fcfd33873a7304f787275
+SHA1: ee3c635d3467094f29eebbd9d258314f9b627ff0
+SHA256: 2349ca2b9b7995d7eb5acfc221619e618b96979ad02614b9a4e6dc648025bd49
+SHA512: 3c5a625e002a781e14c789770033826668cdca9346dd27f70a0ed5bfea94accbac69a9f9846fcb2016da779554087af42d4fc06526f9ba027544cd3c048c79ec
 Description: Minimal set of packages for lmd Linux
  Packages and configuration for a minimal lmd Linux installation
 
@@ -78,11 +78,11 @@ Maintainer: lmd Linux <lmd.linux@gmail.com>
 Installed-Size: 16
 Depends: lmd-desktop
 Filename: pool/stable/all/lmd-nomitigations_1_all.deb
-Size: 1792
-MD5sum: a562cc22a036a1233786a775ab46c762
-SHA1: 4601ecf08c2afaa35d50a7d9774e48cf5d7f6ff7
-SHA256: b63cc0ef5f9be505181f5286a102d5dffc1cec965d604b435729f7ea1025e479
-SHA512: 64acf7a42e809b76f53fb24e56dff84cdaf7675231ddd7263c7acc2cc19999057278e932263d94818c0cab6530f6cb0d5c65bd5453a4de7ffca548bb94641b33
+Size: 1832
+MD5sum: b2a229a39398424f76c4b58106e3e1a3
+SHA1: c65317d65549ea2b2d3d6a4b231cc9b551521504
+SHA256: d413502e44df9e42e8a7fe8501808cd2a1a2d638033f088f3c1025eff7218724
+SHA512: 901d599a8742d8b2a938e73d8fa9c57db0fc891dd815dec7c56a4d5e9fb6eeed44335455fd5c9a22a86de1e9e2148c5d8e01db4279ea2c7d0e3a014ae9c9e3d4
 Description: Disable mitigations
  Disable CPU and i915 mitigations
  Not recommended for use in most situations
@@ -111,14 +111,14 @@ Version: 1
 Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
-Installed-Size: 44
-Depends: iputils-ping
+Installed-Size: 46
+Depends: curl, iputils-ping, jq
 Filename: pool/stable/all/lmd-update_1_all.deb
-Size: 7532
-MD5sum: bead7d3a46796d0019325e2c0607b749
-SHA1: cbb38b7f8eb098e4805ea4964b7eac1bde4b563c
-SHA256: f8a45bbbb853eca6082d5fb156da0e8107eead319f2019f91bc9a01967b78cee
-SHA512: fe8b7e6718ae904254d9c3cfc0dd31e56e76f4a2f74e3657428322ae4ba2e159bf34a68f13dfbe35d36b2072eaf37b128231a4e5f4b950d8d20a6e3edcbb5311
+Size: 7732
+MD5sum: d164e2665494aa1406ae62446dd4f896
+SHA1: 6d5c21e9b61c4134ad311f6ae6860e83004c2d8b
+SHA256: 12eeb91a23593fce994744adf4b17c21653b0d7ff1ef2b1654488a733f1486b9
+SHA512: 69dadcdc826841ea48b465442a6476b9cd232bf0471e9fda59d6cbbdf25f7e6ee4180efef6b1707d17a8c9d3e477d3dece9605ed3867ec5efdc555a105653af8
 Description: automatic updates for lmd Linux
  Services, scripts and configuration for automatic updates of lmd Linux
 
@@ -128,15 +128,15 @@ Version: 1
 Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
-Installed-Size: 64
+Installed-Size: 63
 Depends: lmd-desktop, elementary-xfce-icon-theme, greybird-gtk-theme, light-locker, lightdm-gtk-greeter, network-manager-gnome, xfce4, xfce4-notifyd, xfce4-power-manager, xfce4-terminal, xfce4-whiskermenu-plugin
 Recommends: blueman, galculator, menulibre, mousepad, mugshot, mpv, pkexec, ristretto, seahorse, thunar-archive-plugin, tumbler-plugins-extra, xfce4-screenshooter
 Filename: pool/stable/all/lmd-xfce_1_all.deb
-Size: 20936
-MD5sum: 3f553c014336aa0da8abe9335c77e4fc
-SHA1: 86a6d340739bb62d4a31cac40a2fbcaddcc55a1e
-SHA256: 7555187c6c45e7c3eadeef31bf49be17d8fc843503fea71f4d0ce3d18c26deb0
-SHA512: 5150d93c0c8d25268b22e2de7831be053aaa8070c2d5a110a8ed67cdcb26236bb98f4df10879cb22fe6248388dc6b081a444e97483695ba1736f471b64b426f7
+Size: 20940
+MD5sum: 153f51c179c92b2ed0071f12680cc991
+SHA1: e20b6480200541c12a50499541e230031522e407
+SHA256: 4e177ee4ddce96059dedf5642972ca640b43d8c43fde09ae2c2460535481030a
+SHA512: 88493f11d6f6b52c2727e3336655dedcd6a3812590709e069e27687c4ca6766c4fdeb01d3799b5425f7df39eca9e9dbd13c3b5434e6478e4bbc0cfbc47541a89
 Description: XFCE for lmd Linux
  Collection of XFCE packages and configurations for lmd Linux
 
