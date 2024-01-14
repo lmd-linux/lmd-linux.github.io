@@ -1,17 +1,17 @@
-Package: lmd-update
+Package: lmd-cmdline
 Architecture: all
 Version: 1
 Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
-Installed-Size: 44
-Depends: iputils-ping
-Filename: pool/testing/all/lmd-update_1_all.deb
-Size: 7532
-MD5sum: bead7d3a46796d0019325e2c0607b749
-SHA1: cbb38b7f8eb098e4805ea4964b7eac1bde4b563c
-SHA256: f8a45bbbb853eca6082d5fb156da0e8107eead319f2019f91bc9a01967b78cee
-SHA512: fe8b7e6718ae904254d9c3cfc0dd31e56e76f4a2f74e3657428322ae4ba2e159bf34a68f13dfbe35d36b2072eaf37b128231a4e5f4b950d8d20a6e3edcbb5311
-Description: automatic updates for lmd Linux
- Services, scripts and configuration for automatic updates of lmd Linux
+Installed-Size: 19
+Depends: bash-completion, git, man, powerline, powerline-gitstatus, tmux, vim-addon-manager, vim-nox
+Filename: pool/testing/all/lmd-cmdline_1_all.deb
+Size: 2704
+MD5sum: d94919e80a9d63f9fffc2d8833d217a6
+SHA1: 8fe63fc1422f09fa3ea5ef96a7e20ae8ddcf7651
+SHA256: b3d0c9fa74ff4223d86d96d159ea34ada50ac6ed9edb0149cc6d71dd80af6ec7
+SHA512: 07f4ab923b8572c19bded98afd960c3fa34a9c0a8894968a8fc8ea78268bbcf55250fdddc3f98225de86902119448f98eae446357ddc6519d7fb228591f111f4
+Description: command-line tools
+ A collection of useful command-line tools and their default configuration
 

@@ -1,17 +1,13 @@
 Architectures: all
 Components: main
-Date: Sat, 25 Nov 2023 22:02:04 +0000
+Date: Sun, 14 Jan 2024 00:25:08 +0000
 Origin: lmd Linux
 Suite: testing
 MD5Sum:
- a6b26972b356ecceb458993cc92579a0              643 main/binary-all/Packages
- 4fa9ee77cfef2ca5e1f8cf7f0eb9c972              780 main/binary-amd64/Packages
+ a051481517a1b348fc28e6a37c4bf7f0              714 main/binary-all/Packages
 SHA1:
- 5080468b06f389cd122771ff69e62fd3dfc8c236              643 main/binary-all/Packages
- ed1d204c883ef9f9757360bc40addd009bbbe65d              780 main/binary-amd64/Packages
+ 789ade1c6e6b5fbb8a33a8acd047bd2edf9855df              714 main/binary-all/Packages
 SHA256:
- 1662592796fdc146b72fd7bf3dc00cf1b2f382e4d43378a72aa3432d3770aef2              643 main/binary-all/Packages
- a9d9f8293581176d597ba0a2174a75bee1a183af448044df720a416507dee482              780 main/binary-amd64/Packages
+ 5b17451e681e8c43ad16c4216f6eb18ec8069c9440a88f035b79b79d6818dac4              714 main/binary-all/Packages
 SHA512:
- 5a166d15b7664ccd4609318bbba6b4776a665890b4da86ebee7fa56f916f686b11b63e804ccdbf1b64d5cb409fb3c2c6bc03e970faff8f3274b887acc0158636              643 main/binary-all/Packages
- 861d4886046be0f58c96a7d6200f49ee0ee523e952a1888092d908a88b69c3dbd911e7397395f838a6c2a4408ae4902ede8ec51e995295e5804130a12036d0bb              780 main/binary-amd64/Packages
+ a2c947c7582011d3f5f74b888bbfdbf3fde3caa764ca94b1658c459520323c3dc6dfd9e8580dcd6430bdf9297ef15e08986c716f67db239ca0f90e06e198bbc0              714 main/binary-all/Packages
