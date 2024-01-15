@@ -23,9 +23,9 @@ lmd Linux multiboots just fine. Make sure to install it last for best results.
 
 3. Select manual partitioning.
    1. UEFI (which you are most likely using) requires a bootable EFI System Partition. 40MB is
-      enough, but you may have to make it as large as 200MB if you want to use `fwupd`. Do not
-      create an EFI System Partition if one already exists because you're installing next to another
-      Windows or Linux OS.
+      enough, but you may have to make it as large as 200MB if you want to use `fwupd`. You do not
+      need to create an additional EFI System Partition if one already exists because you're
+      installing next to another Windows or Linux OS.
    2. Create a swap partition even if you think you don't need it. Make it the size of your RAM in
       case you want to use it to hibernate. You should use the GiB notation (gibibyte) instead of GB
       (gigabyte) to get the exact size of your RAM when setting the size of your swap partition.
@@ -35,7 +35,7 @@ lmd Linux multiboots just fine. Make sure to install it last for best results.
 
 4. Confirm your partitioning and you're all done. The rest of the process will take 5 to 20 minutes
    depending on your machine and internet connection. A lot of time will be spent showing "Running
-   preseed...", this is normal.
+   preseed...", this is normal, it's when the `lmd` magic happens.
 
 
 # On your first boot
