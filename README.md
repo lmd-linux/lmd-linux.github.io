@@ -56,7 +56,7 @@ sudo apt purge google-chrome-stable```
 
 Compositing is disabled in `lmd` for performance reasons and also because it's mostly useless. New
 versions of Chrome have a bug with compositing disabled which you can fix by disabling the new (and
-not great) desktop design. Just go to `chrome://flags`, search for Chrome Refresh 2023", and simply
+not great) desktop design. Just go to `chrome://flags`, search for "Chrome Refresh 2023", and simply
 disable it.
 
 
