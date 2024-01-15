@@ -1,0 +1,23 @@
+name: Generate repository
+on:
+  push:
+    paths:
+      - '.github/workflows/html.yaml'
+      - 'README.md'
+jobs:
+  generate-html:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Generate HTML
+        uses: jaywcjlove/markdown-to-html-cli@main
+        with:
+          source: README.md
+          output: index.html
+      - name: Update repo
+        uses: test-room-7/action-update-file@v1
+        with:
+          file-path: index.html
+          commit-msg: Update index.html
+          github-token: ${{ secrets.GITHUB_TOKEN }}
