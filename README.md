@@ -114,8 +114,8 @@ install it, run:
 curl lmd-linux.github.io/gaming | sudo bash
 ```
 
-A number of tools and configurations not available anywhere else are installed to make gaming faster
-and better. But also these (among other things):
+A number of tools and configurations, some not available elsewhere, are installed to make gaming
+faster and better. Among them (not an exhaustive list):
 
 
 ## MangoHud
@@ -140,10 +140,10 @@ gamemoderun mangohud %command%
 
 ## Heroic
 
-Use it for your Epic, GOG, Amazon Prime as well as manually installed games. You can enable and
-configure MangoHud, GameMode and gamescope in the UI. You can also download and manage Wine GE and
-Proton GE version, or choose the Wine version provided by `lmd` as a backup. You can even integrate
-all your games into Steam in case you want to use its Big Picture Mode as a launcher for example.
+Use it for Epic, GOG, Amazon Prime as well as manually installed games. You can enable and configure
+MangoHud, GameMode and gamescope in the UI. You can also download and manage Wine GE and Proton GE
+versions, or choose the Wine version provided by `lmd` as a backup. You can even integrate all your
+games into Steam in case you want to use its Big Picture Mode as a launcher for example.
 
 
 ## Retroarch
