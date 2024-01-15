@@ -120,9 +120,9 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
         <ol>
           <li>
             UEFI (which you are most likely using) requires a bootable EFI System Partition. 40MB is
-            enough, but you may have to make it as large as 200MB if you want to use <code>fwupd</code>. Do not
-            create an EFI System Partition if one already exists because you're installing next to another
-            Windows or Linux OS.
+            enough, but you may have to make it as large as 200MB if you want to use <code>fwupd</code>. You do not
+            need to create an additional EFI System Partition if one already exists because you're
+            installing next to another Windows or Linux OS.
           </li>
           <li>
             Create a swap partition even if you think you don't need it. Make it the size of your RAM in
@@ -140,7 +140,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
         <p>
           Confirm your partitioning and you're all done. The rest of the process will take 5 to 20 minutes
           depending on your machine and internet connection. A lot of time will be spent showing "Running
-          preseed...", this is normal.
+          preseed...", this is normal, it's when the <code>lmd</code> magic happens.
         </p>
       </li>
     </ol>
