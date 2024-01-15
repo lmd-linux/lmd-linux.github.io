@@ -1,6 +1,6 @@
-# lmd Linux
+# `lmd` Linux
 
-Not Lmd, nor LMD. Just lmd.
+Not Lmd, nor LMD. Just `lmd`.
 
 - Light and fast, all of the features but none of the cruft
 - Easy on the eye desktop which stays out of your way and preserves vertical space
@@ -12,7 +12,7 @@ Not Lmd, nor LMD. Just lmd.
 
 # Installation
 
-lmd Linux multiboots just fine. Just make sure to install it last.
+lmd Linux multiboots just fine. Make sure to install it last for best results.
 
 1. Copy [this ISO image](https://drive.google.com/file/d/18ddvi3B6GkGRtDXTWwDPy9Y3swXzCkEE) to a USB
    stick and boot it.
@@ -41,11 +41,23 @@ lmd Linux multiboots just fine. Just make sure to install it last.
 # On your first boot
 
 Log in normally, then reboot immediately. There is a yet unidentified issue between Google Chrome
-and GNOME Keyring which makes the former fail to start on the first login, and hang at system
-shutdown. All will be fine after that.
+and GNOME Keyring which makes the system hang at shutdown. All will be fine after that.
 
 
 # Optional packages
+
+## Google Chrome
+
+Chrome comes pre-installed but is optional. You can remove it with:
+
+```shell
+sudo apt purge google-chrome-stable```
+```
+
+Compositing is disabled in `lmd` for performance reasons and also because it's mostly useless. New
+versions of Chrome have a bug with compositing disabled which you can fix by disabling the new (and
+not great) desktop design. Just go to `chrome://flags`, search for Chrome Refresh 2023", and simply
+disable it.
 
 
 ## `lmd-japanese-input`
@@ -65,7 +77,7 @@ Then log out and back in.
 ## `intel-undervolt`
 
 Undervolt Intel CPU Core generations 6th to 10th and some others. Note that using the daemon mode
-to set a performance hint may conflict with `tlp` which is automatically installed by lmd Linux on
+to set a performance hint may conflict with `tlp` which is automatically installed by `lmd` Linux on
 laptops.
 
 Install with:
@@ -81,7 +93,8 @@ then edit `/etc/intel-undervolt.conf` to increase your undervolt little by littl
 ## `lmd-nomitigations`
 
 Disable CPU and i915 vulnerability mitigations. This is not recommended for use in most situations.
-Only install this package if you know exactly what you're doing.
+Only install this package if you know exactly what you're doing because it has serious security
+implications.
 
 Install with:
 
@@ -90,3 +103,50 @@ sudo apt install lmd-nomitigations
 ```
 
 Then reboot.
+
+
+# Gaming
+
+`lmd` comes with a powerful gaming setup, not installed by default because it's fairly heavy. To
+install it, run:
+
+```shell
+curl lmd-linux.github.io/gaming | sudo bash
+```
+
+A number of tools and configurations not available anywhere else are installed to make gaming faster
+and better. But also these (among other things):
+
+
+## MangoHud
+
+Default hotkeys are `Left_Shift+Equal` to toggle the HUD and `Left_Shift+Minus` to cycle through the
+various FPS limit values.
+
+
+## Steam installer
+
+Click on the Steam Installer entry in your desktop menu to automatically install and setup Steam.
+
+If you want to use MangoHud and/or GameMode in a game, click on the cog icon to the right of the
+game page, select Properties, and in the General tab add one of these in the LAUNCH OPTIONS box:
+
+```shell
+mangohud %command%
+gamemoderun %command%
+gamemoderun mangohud %command%
+```
+
+
+## Heroic
+
+Use it for your Epic, GOG, Amazon Prime as well as manually installed games. You can enable and
+configure MangoHud, GameMode and gamescope in the UI. You can also download and manage Wine GE and
+Proton GE version, or choose the Wine version provided by `lmd` as a backup. You can even integrate
+all your games into Steam in case you want to use its Big Picture Mode as a launcher for example.
+
+
+## Retroarch
+
+Comes with some basic pre-configuration. Don't forget to go into the Online Updater in the main
+menu, and run all the Update utilities (Core Info Files, Controller Profiles, etc…).
