@@ -149,4 +149,5 @@ games into Steam in case you want to use its Big Picture Mode as a launcher for 
 ## Retroarch
 
 Comes with some basic pre-configuration. Don't forget to go into the Online Updater in the main
-menu, and run all the Update utilities (Core Info Files, Controller Profiles, etc…).
+menu, and run all the Update utilities (Core Info Files, Controller Profiles, etc…). Also, make sure
+to run the Core System Files Downloader after installing cores that require extra assets.
