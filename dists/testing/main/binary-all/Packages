@@ -5,13 +5,13 @@ Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
 Installed-Size: 19
-Depends: apt-transport-https, base-files, ca-certificates, fontconfig-config, lsb-release, systemd-timesyncd
+Depends: lmd-minimal
 Filename: pool/testing/all/gpd-pocket2_1_all.deb
-Size: 2368
-MD5sum: e2fbc41cbfebf821e993be050274d51c
-SHA1: ec0b91956782351859cd79a34d2ce9052b67d06e
-SHA256: 71741cb45986ba8404984074cfb9b6253b1f3726d73464b5bc20409e1f7325a7
-SHA512: 0d286b197882c8a5eaebaa5bf81587cc83282d607c7c1f6b73b6528669b7ca8c4ff3d7413fb52d7346501e33f83cc846a925031a51dcaadc18039cccab42b8e1
+Size: 2300
+MD5sum: 5903a1137a0638f74643c822b4848b84
+SHA1: c49e671465c4844676249bd90a9aacb6e26ad95b
+SHA256: 34668c1cf27cdafb77be2cafa1d205b08c0bcac13f63b293d0c8cf14e04acb92
+SHA512: 36eaf439e0279bb85205e4bcbe982dd5bfd9b35b04bbb388b560ec6b5b561c51788f31997bcaeb494dbcfa4f36efa6a3fb8c2c2f3a6618df0d217a30d8716185
 Description: Minimal set of packages for lmd Linux
  Packages and configuration for a minimal lmd Linux installation
 
