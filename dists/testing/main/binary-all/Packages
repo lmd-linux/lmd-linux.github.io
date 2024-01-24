@@ -1,5 +1,22 @@
 Package: gpd-pocket2
 Architecture: all
+Version: 1.0.1
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 19
+Depends: lmd-minimal
+Filename: pool/testing/all/gpd-pocket2_1.0.1_all.deb
+Size: 2368
+MD5sum: 6ebb14476e9dd6be45e9eef6c1af3b7d
+SHA1: e56481ff102c8c4de72a7dd3bfd2fca08e00dcc8
+SHA256: c2505d143614e453fe5345a840d0ddb2b5689e151f4a755a4f580f1c2b3a90f5
+SHA512: 931bc5d392461ddcd8b3a6e68be26422b1427d60ed4cfcce50b11d362e646bd95984a8b212f63b60caff930221f29d83be74a79ceda75cdcbb46ec542fd0d3ce
+Description: Minimal set of packages for lmd Linux
+ Packages and configuration for a minimal lmd Linux installation
+
+Package: gpd-pocket2
+Architecture: all
 Version: 1
 Priority: important
 Section: misc
