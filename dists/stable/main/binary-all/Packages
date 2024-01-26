@@ -15,6 +15,23 @@ SHA512: 58081857ff4e1e4f7c7938493f9886fd83e7cf1f65575380036d55453cfb753b368a7184
 Description: Minimal set of packages for lmd Linux
  Packages and configuration for a minimal lmd Linux installation
 
+Package: gpd-winmini
+Architecture: all
+Version: 1
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 23
+Depends: lmd-minimal
+Filename: pool/stable/all/gpd-winmini_1_all.deb
+Size: 2752
+MD5sum: 79849f61b5ed0e8c6651ac345513090d
+SHA1: cffd71de174dcf9fd24a9ddcc426f28cffb30dc1
+SHA256: 30c14a197061b86965020792f86b8e2d81d0ce9e9e81f2cf2e65e0d47eebbde1
+SHA512: 3cdd9e6aee227d30dce6947d3d3ec3cc1955c3660281b7964a7ebc0df943d04fff67de6b88d30fe437d3c9dd63637466a8ba2561475ae1bbf8b8312457a9bf0b
+Description: Minimal set of packages for lmd Linux
+ Packages and configuration for a minimal lmd Linux installation
+
 Package: lmd-cmdline
 Architecture: all
 Version: 1
