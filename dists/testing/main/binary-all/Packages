@@ -1,0 +1,18 @@
+Package: lmd-cmdline
+Architecture: all
+Version: 1.1
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 19
+Depends: bash-completion, git, man, tmux, vim-addon-manager, vim-nox
+Recommends: powerline, powerline-gitstatus
+Filename: pool/testing/all/lmd-cmdline_1.1_all.deb
+Size: 2712
+MD5sum: b29de0fa85fc9243d11d2b7ec8b405a3
+SHA1: 9dd8a697f583389217cc2a935c3fd7a65abfe5a2
+SHA256: ddd0475e5b003f8c5f1a1479b2902e9bc8d420404e5665e2a8459f5ab287c64a
+SHA512: a23e607ce4a67cd5a0d968dbd7325d13fdf033ce27de5d170a2a4f1a98f4f0e6c5362d671fe56db6e7a4d1178f02ec7fa474ef23f6ba065dfb70701637f1aba2
+Description: command-line tools
+ A collection of useful command-line tools and their default configuration
+
