@@ -111,7 +111,7 @@ Then reboot.
 install it, run:
 
 ```shell
-curl lmd-linux.github.io/gaming | sudo bash
+curl -L lmd-linux.github.io/gaming | sudo bash
 ```
 
 A number of tools and configurations, some not available elsewhere, are installed to make gaming
