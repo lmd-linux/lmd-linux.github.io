@@ -14,7 +14,7 @@ Not Lmd, nor LMD. Just `lmd`.
 
 lmd Linux multiboots just fine. Make sure to install it last for best results.
 
-1. Copy [this ISO image](https://drive.google.com/file/d/18ddvi3B6GkGRtDXTWwDPy9Y3swXzCkEE) to a USB
+1. Copy [this ISO image](https://drive.google.com/file/d/1UEJ5a6xcU3RaSL5abFUbCUy7QUY_4UrJ) to a USB
    stick and boot it.
 
 2. Choose your location and language, connect to the internet (required, the image should have all
@@ -108,7 +108,7 @@ Then reboot.
 # Gaming
 
 `lmd` comes with a powerful gaming setup, not installed by default because it's fairly heavy. To
-install it, run:
+install it, paste the following in a terminal:
 
 ```shell
 curl -L lmd-linux.github.io/gaming | sudo bash
