@@ -17,18 +17,18 @@ Description: Minimal set of packages for lmd Linux
 
 Package: gpd-pocket
 Architecture: all
-Version: 1.2
+Version: 1.3
 Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
 Installed-Size: 29
 Depends: firmware-intel-sound, lmd-minimal
-Filename: pool/stable/all/gpd-pocket_1.2_all.deb
-Size: 5532
-MD5sum: c63c063fe8d4af8faaf633bd8c1be55e
-SHA1: 60c5204eb5aedcdeb8961e191cbb5c66cdeb656c
-SHA256: 0ae72e442fc652e65e6c2f2034c739d82ad84117b26a5041290b15ba8b3beade
-SHA512: 3b095001aa19c659454e4d777685f83d8960a6342cf780dbd0e804f1113a1dd5241a936f04ff0066a5759877d7d078b868e2dc1c8b4e964fae46d4d4a22907d5
+Filename: pool/stable/all/gpd-pocket_1.3_all.deb
+Size: 5660
+MD5sum: 086ef5e625ffcc07bcb5905bba13ec4d
+SHA1: 45c9c977437c8673b5de6c384b4b4ff3b794bf73
+SHA256: 7953a1720faca5dba6d671d569a12ff141aee1883ca48df997175c09233937ce
+SHA512: 5ee53fdf1f90d6e4f3c4c4d643bcfd4168cabc9d2c103f2131c7c911e3b7063b2e34c60e92a95fbbcf9a24cadb637c50a36a76d3750c72c6d394d6673127c496
 Description: Packages and configurations for the GPD Pocket
  Packages and configuration for a minimal lmd Linux installation
 
@@ -106,18 +106,18 @@ Description: Japanese input for lmd Linux
 
 Package: lmd-minimal
 Architecture: all
-Version: 1
+Version: 1.1
 Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
-Installed-Size: 15
+Installed-Size: 17
 Depends: apt-transport-https, base-files, ca-certificates, fontconfig-config, lsb-release, systemd-timesyncd
-Filename: pool/stable/all/lmd-minimal_1_all.deb
-Size: 2008
-MD5sum: 56736a8c9e76ff724dfe71aa93d81bad
-SHA1: e71bd96ac312000b3932415090d1bfab4e050da6
-SHA256: aa029d0486ce243359b8ee445917c06923c939535db7d56f85314300faae8fa9
-SHA512: bfaec435aa076b07eb294f63e8f1b2ae866e97fe9fcd3017f1ab1fb14a26dec622614a8d9493e70455c950609740781b700094e0a79fd27aaa2362daf2c707b8
+Filename: pool/stable/all/lmd-minimal_1.1_all.deb
+Size: 2092
+MD5sum: ec95771ac910faf55c12003a349817b5
+SHA1: e7d64f896e464dee5335383dbb56045d93b4729c
+SHA256: 103abbd212a83e2bdb5bb3f11cb43d696e6ea76e90327d067532518ec565c7df
+SHA512: 2396dbb9dc33cd1c29304d586eaece90977c6fe5727af24a863717ab49282fb19c084b2849bd145cbfdd94f840d34c8d821299a8a16b10ffdb2a9a51295bd235
 Description: Minimal set of packages for lmd Linux
  Packages and configuration for a minimal lmd Linux installation
 
