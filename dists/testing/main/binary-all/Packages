@@ -15,3 +15,20 @@ SHA512: 5ee53fdf1f90d6e4f3c4c4d643bcfd4168cabc9d2c103f2131c7c911e3b7063b2e34c60e
 Description: Packages and configurations for the GPD Pocket
  Packages and configuration for a minimal lmd Linux installation
 
+Package: lmd-minimal
+Architecture: all
+Version: 1.1
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 17
+Depends: apt-transport-https, base-files, ca-certificates, fontconfig-config, lsb-release, systemd-timesyncd
+Filename: pool/testing/all/lmd-minimal_1.1_all.deb
+Size: 2092
+MD5sum: ec95771ac910faf55c12003a349817b5
+SHA1: e7d64f896e464dee5335383dbb56045d93b4729c
+SHA256: 103abbd212a83e2bdb5bb3f11cb43d696e6ea76e90327d067532518ec565c7df
+SHA512: 2396dbb9dc33cd1c29304d586eaece90977c6fe5727af24a863717ab49282fb19c084b2849bd145cbfdd94f840d34c8d821299a8a16b10ffdb2a9a51295bd235
+Description: Minimal set of packages for lmd Linux
+ Packages and configuration for a minimal lmd Linux installation
+
