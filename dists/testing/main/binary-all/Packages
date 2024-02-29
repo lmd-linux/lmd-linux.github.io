@@ -1,18 +1,17 @@
-Package: lmd-cmdline
+Package: gpd-pocket
 Architecture: all
-Version: 1.1
+Version: 1
 Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
-Installed-Size: 19
-Depends: bash-completion, git, man, tmux, vim-addon-manager, vim-nox
-Recommends: powerline, powerline-gitstatus
-Filename: pool/testing/all/lmd-cmdline_1.1_all.deb
-Size: 2712
-MD5sum: b29de0fa85fc9243d11d2b7ec8b405a3
-SHA1: 9dd8a697f583389217cc2a935c3fd7a65abfe5a2
-SHA256: ddd0475e5b003f8c5f1a1479b2902e9bc8d420404e5665e2a8459f5ab287c64a
-SHA512: a23e607ce4a67cd5a0d968dbd7325d13fdf033ce27de5d170a2a4f1a98f4f0e6c5362d671fe56db6e7a4d1178f02ec7fa474ef23f6ba065dfb70701637f1aba2
-Description: command-line tools
- A collection of useful command-line tools and their default configuration
+Installed-Size: 16
+Depends: lmd-minimal
+Filename: pool/testing/all/gpd-pocket_1_all.deb
+Size: 2152
+MD5sum: 730d3796f1614c577afb039b47d28595
+SHA1: 0c395e3fe0008463e111c83ab5d190045042e22d
+SHA256: 2ada9c7955bbc4ad3884d451911d51ee952c7585f43f9b2d0cb0114e1e7da75a
+SHA512: 457b5a18e8dc6dd34b24e022507597aa73f6138a72366c57da8e9b5fe5a3204e31d17b4b9c275099f8e79bba06844558905cccdf1558d24aa9688f9537a9784f
+Description: Minimal set of packages for lmd Linux
+ Packages and configuration for a minimal lmd Linux installation
 
