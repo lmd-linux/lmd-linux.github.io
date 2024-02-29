@@ -17,18 +17,18 @@ Description: Minimal set of packages for lmd Linux
 
 Package: gpd-pocket
 Architecture: all
-Version: 1.1
+Version: 1.2
 Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
-Installed-Size: 16
+Installed-Size: 29
 Depends: firmware-intel-sound, lmd-minimal
-Filename: pool/stable/all/gpd-pocket_1.1_all.deb
-Size: 2192
-MD5sum: 10a878587ab53cf28620a0a650970577
-SHA1: bb7077b587addf8ef102dde0b079edcad68c035c
-SHA256: 0b567f6d5e54671f91155dc9c4862d5fab8ca87fc491ae16946938720ddf2aaf
-SHA512: b204888c9ff5399cdf6817c991f7dc93f48607b42f03b18c49fee78a0c081b8c49ae1da9004543824ff67d7909bd0aa24a64d58a387bd1d319675586bbbb2ec2
+Filename: pool/stable/all/gpd-pocket_1.2_all.deb
+Size: 5532
+MD5sum: c63c063fe8d4af8faaf633bd8c1be55e
+SHA1: 60c5204eb5aedcdeb8961e191cbb5c66cdeb656c
+SHA256: 0ae72e442fc652e65e6c2f2034c739d82ad84117b26a5041290b15ba8b3beade
+SHA512: 3b095001aa19c659454e4d777685f83d8960a6342cf780dbd0e804f1113a1dd5241a936f04ff0066a5759877d7d078b868e2dc1c8b4e964fae46d4d4a22907d5
 Description: Packages and configurations for the GPD Pocket
  Packages and configuration for a minimal lmd Linux installation
 
