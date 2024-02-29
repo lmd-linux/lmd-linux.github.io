@@ -1,34 +1,17 @@
 Package: gpd-pocket
 Architecture: all
-Version: 1.1
+Version: 1.3
 Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
 Installed-Size: 29
 Depends: firmware-intel-sound, lmd-minimal
-Filename: pool/testing/all/gpd-pocket_1.1_all.deb
-Size: 5528
-MD5sum: b46d6419e36ab468e5369ae0e2ec2df2
-SHA1: 6d831c6b96edace400d5c4a771fa09d8d1662e47
-SHA256: 8e5be7df7c4bb12fda392edbc5f86dd16741959b919332c9973678f1fbc37cb2
-SHA512: bc2779ed46c3b63de0f1032f564d7c1e9625b8c834095f6c291f69f9f89fa6046ac4b1e91bc35238c59248af289a69c270142090411cd9427b440963ed521757
-Description: Packages and configurations for the GPD Pocket
- Packages and configuration for a minimal lmd Linux installation
-
-Package: gpd-pocket
-Architecture: all
-Version: 1.2
-Priority: important
-Section: misc
-Maintainer: lmd Linux <lmd.linux@gmail.com>
-Installed-Size: 29
-Depends: firmware-intel-sound, lmd-minimal
-Filename: pool/testing/all/gpd-pocket_1.2_all.deb
-Size: 5532
-MD5sum: c63c063fe8d4af8faaf633bd8c1be55e
-SHA1: 60c5204eb5aedcdeb8961e191cbb5c66cdeb656c
-SHA256: 0ae72e442fc652e65e6c2f2034c739d82ad84117b26a5041290b15ba8b3beade
-SHA512: 3b095001aa19c659454e4d777685f83d8960a6342cf780dbd0e804f1113a1dd5241a936f04ff0066a5759877d7d078b868e2dc1c8b4e964fae46d4d4a22907d5
+Filename: pool/testing/all/gpd-pocket_1.3_all.deb
+Size: 5660
+MD5sum: 086ef5e625ffcc07bcb5905bba13ec4d
+SHA1: 45c9c977437c8673b5de6c384b4b4ff3b794bf73
+SHA256: 7953a1720faca5dba6d671d569a12ff141aee1883ca48df997175c09233937ce
+SHA512: 5ee53fdf1f90d6e4f3c4c4d643bcfd4168cabc9d2c103f2131c7c911e3b7063b2e34c60e92a95fbbcf9a24cadb637c50a36a76d3750c72c6d394d6673127c496
 Description: Packages and configurations for the GPD Pocket
  Packages and configuration for a minimal lmd Linux installation
 
