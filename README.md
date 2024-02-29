@@ -34,8 +34,9 @@ lmd Linux multiboots just fine. Make sure to install it last for best results.
       partitions; subvolumes are going to be automatically created.
 
 4. Confirm your partitioning and you're all done. The rest of the process will take 5 to 20 minutes
-   depending on your machine and internet connection. A lot of time will be spent showing "Running
-   preseed...", this is normal, it's when the `lmd` magic happens.
+   depending on your machine and internet connection. **A very long time may be spent showing
+   "Running preseed...", this is normal**, it's when the `lmd` magic happens so please just be
+   patient.
 
 
 # On your first boot
