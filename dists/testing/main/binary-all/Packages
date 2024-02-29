@@ -4,14 +4,14 @@ Version: 1.1
 Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
-Installed-Size: 16
+Installed-Size: 29
 Depends: firmware-intel-sound, lmd-minimal
 Filename: pool/testing/all/gpd-pocket_1.1_all.deb
-Size: 2192
-MD5sum: 10a878587ab53cf28620a0a650970577
-SHA1: bb7077b587addf8ef102dde0b079edcad68c035c
-SHA256: 0b567f6d5e54671f91155dc9c4862d5fab8ca87fc491ae16946938720ddf2aaf
-SHA512: b204888c9ff5399cdf6817c991f7dc93f48607b42f03b18c49fee78a0c081b8c49ae1da9004543824ff67d7909bd0aa24a64d58a387bd1d319675586bbbb2ec2
+Size: 5528
+MD5sum: b46d6419e36ab468e5369ae0e2ec2df2
+SHA1: 6d831c6b96edace400d5c4a771fa09d8d1662e47
+SHA256: 8e5be7df7c4bb12fda392edbc5f86dd16741959b919332c9973678f1fbc37cb2
+SHA512: bc2779ed46c3b63de0f1032f564d7c1e9625b8c834095f6c291f69f9f89fa6046ac4b1e91bc35238c59248af289a69c270142090411cd9427b440963ed521757
 Description: Packages and configurations for the GPD Pocket
  Packages and configuration for a minimal lmd Linux installation
 
