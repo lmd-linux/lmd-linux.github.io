@@ -100,7 +100,7 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
       <li>More features to come</li>
     </ul>
     <h1 id="installation"><a class="anchor" aria-hidden="true" tabindex="-1" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h1>
-    <p>lmd Linux multiboots just fine. Make sure to install it last for best results.</p>
+    <p><code>lmd</code> Linux multiboots just fine. Make sure to install it last for best results.</p>
     <ol>
       <li>
         <p>
@@ -156,12 +156,6 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
     <pre class="language-shell"><code class="language-shell code-highlight"><span class="code-line line-number" line="1"><span class="token function">sudo</span> <span class="token function">apt</span> purge google-chrome-stable```
 </span></code><div onclick="copied(this)" data-code="sudo apt purge google-chrome-stable&#x60;&#x60;&#x60;
 " class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-    <p>
-      Compositing is disabled in <code>lmd</code> for performance reasons and also because it's mostly useless. New
-      versions of Chrome have a bug with compositing disabled which you can fix by disabling the new (and
-      not great) desktop design. Just go to <code>chrome://flags</code>, search for "Chrome Refresh 2023", and simply
-      disable it.
-    </p>
     <h2 id="lmd-japanese-input"><a class="anchor" aria-hidden="true" tabindex="-1" href="#lmd-japanese-input"><span class="octicon octicon-link"></span></a><code>lmd-japanese-input</code></h2>
     <p>
       Tools, fonts and configuration for Japanese input. The default key combination for cycling through
@@ -199,25 +193,34 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
     <p>Then reboot.</p>
     <h1 id="gaming"><a class="anchor" aria-hidden="true" tabindex="-1" href="#gaming"><span class="octicon octicon-link"></span></a>Gaming</h1>
     <p>
-      <code>lmd</code> comes with a powerful gaming setup, not installed by default because it's fairly heavy. To
-      install it, paste the following in a terminal:
+      <code>lmd</code> linux comes with a sophisticated gaming setup allowing you to play almost all your Steam,
+      Epic. GOG or Amazon Prime games. They may even play faster than on Windows. To install it, paste the
+      following in a terminal:
     </p>
     <pre class="language-shell"><code class="language-shell code-highlight"><span class="code-line line-number" line="1"><span class="token function">curl</span> <span class="token parameter variable">-L</span> lmd-linux.github.io/gaming <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">bash</span>
 </span></code><div onclick="copied(this)" data-code="curl -L lmd-linux.github.io/gaming | sudo bash
 " class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
     <p>
-      A number of tools and configurations, some not available elsewhere, are installed to make gaming
-      faster and better. Among them (not an exhaustive list):
+      If you have an Nvidia GPU please refer to the
+      <a href="https://wiki.debian.org/NvidiaGraphicsDrivers">NVIDIA Proprietary Driver instructions for Debian</a>.
+      The latest drivers for AMD and Intel GPUS, whether discrete or integrated, are already installed.
     </p>
-    <h2 id="mangohud"><a class="anchor" aria-hidden="true" tabindex="-1" href="#mangohud"><span class="octicon octicon-link"></span></a>MangoHud</h2>
+    <p>
+      This will automatically install a number of tools and low-level configurations, some of them not
+      available anywhere else, as well as the following packages:
+    </p>
+    <h2 id="mangohud--httpsgithubcomflightlessmangomangohud"><a class="anchor" aria-hidden="true" tabindex="-1" href="#mangohud--httpsgithubcomflightlessmangomangohud"><span class="octicon octicon-link"></span></a>MangoHud — <a href="https://github.com/flightlessmango/MangoHud">https://github.com/flightlessmango/MangoHud</a></h2>
     <p>
       Default hotkeys are <code>Left_Shift+Equal</code> to toggle the HUD and <code>Left_Shift+Minus</code> to cycle through the
       various FPS limit values.
     </p>
-    <h2 id="steam-installer"><a class="anchor" aria-hidden="true" tabindex="-1" href="#steam-installer"><span class="octicon octicon-link"></span></a>Steam installer</h2>
-    <p>Click on the Steam Installer entry in your desktop menu to automatically install and setup Steam.</p>
+    <h2 id="steam-installer--httpsstoresteampoweredcom"><a class="anchor" aria-hidden="true" tabindex="-1" href="#steam-installer--httpsstoresteampoweredcom"><span class="octicon octicon-link"></span></a>Steam installer — <a href="https://store.steampowered.com/">https://store.steampowered.com</a></h2>
     <p>
-      If you want to use MangoHud and/or GameMode in a game, click on the cog icon to the right of the
+      Click on the Steam Installer entry in your desktop menu to automatically install and setup the Steam
+      client..
+    </p>
+    <p>
+      If you want to use MangoHud and/or GameMode in a Steam game, click on the cog icon to the right of the
       game page, select Properties, and in the General tab add one of these in the LAUNCH OPTIONS box:
     </p>
     <pre class="language-shell"><code class="language-shell code-highlight"><span class="code-line line-number" line="1">mangohud %command%
@@ -227,14 +230,14 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
 gamemoderun %command%
 gamemoderun mangohud %command%
 " class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-    <h2 id="heroic"><a class="anchor" aria-hidden="true" tabindex="-1" href="#heroic"><span class="octicon octicon-link"></span></a>Heroic</h2>
+    <h2 id="heroic--httpsheroicgameslaunchercom"><a class="anchor" aria-hidden="true" tabindex="-1" href="#heroic--httpsheroicgameslaunchercom"><span class="octicon octicon-link"></span></a>Heroic — <a href="https://heroicgameslauncher.com/">https://heroicgameslauncher.com</a></h2>
     <p>
       Use it for Epic, GOG, Amazon Prime as well as manually installed games. You can enable and configure
       MangoHud, GameMode and gamescope in the UI. You can also download and manage Wine GE and Proton GE
       versions, or choose the Wine version provided by <code>lmd</code> as a backup. You can even integrate all your
       games into Steam in case you want to use its Big Picture Mode as a launcher for example.
     </p>
-    <h2 id="retroarch"><a class="anchor" aria-hidden="true" tabindex="-1" href="#retroarch"><span class="octicon octicon-link"></span></a>Retroarch</h2>
+    <h2 id="retroarch--httpswwwretroarchcom"><a class="anchor" aria-hidden="true" tabindex="-1" href="#retroarch--httpswwwretroarchcom"><span class="octicon octicon-link"></span></a>Retroarch — <a href="https://www.retroarch.com/">https://www.retroarch.com</a></h2>
     <p>
       Comes with some basic pre-configuration. Don't forget to go into the Online Updater in the main
       menu, and run all the Update utilities (Core Info Files, Controller Profiles, etc…). Also, make sure
