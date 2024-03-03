@@ -15,3 +15,20 @@ SHA512: b6c2708ee2f78f0061494fd033ddbff796bf191012141848861292c263701ce2bf13718b
 Description: Minimal set of packages for lmd Linux
  Packages and configuration for a minimal lmd Linux installation
 
+Package: lmd-minimal
+Architecture: all
+Version: 1.2
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 18
+Depends: apt-transport-https, base-files, ca-certificates, fontconfig-config, lsb-release, systemd-timesyncd
+Filename: pool/testing/all/lmd-minimal_1.2_all.deb
+Size: 2148
+MD5sum: 8adab49aaeda5583b5d415b2ad9dc6cf
+SHA1: a0128c394d4f5fc1f89076061bef45f40ad9dd6e
+SHA256: 56524c77ea2c0bb6260b0e2bd9cfa658493595b3738010b7fe7c19a30c4adfbb
+SHA512: 71276b4f50674f3a883afb091e68b51ef45ec87a317c91019dad78e8de2b05a6b102aeb782b0628a2a913bfba18e58e919ccc315e8b3cff84ff01789157dbea8
+Description: Minimal set of packages for lmd Linux
+ Packages and configuration for a minimal lmd Linux installation
+
