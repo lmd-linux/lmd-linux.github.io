@@ -12,7 +12,7 @@ Not Lmd, nor LMD. Just `lmd`.
 
 # Installation
 
-lmd Linux multiboots just fine. Make sure to install it last for best results.
+`lmd` Linux multiboots just fine. Make sure to install it last for best results.
 
 1. Copy [this ISO image](https://drive.google.com/file/d/1UEJ5a6xcU3RaSL5abFUbCUy7QUY_4UrJ) to a USB
    stick and boot it.
@@ -54,11 +54,6 @@ Chrome comes pre-installed but is optional. You can remove it with:
 ```shell
 sudo apt purge google-chrome-stable```
 ```
-
-Compositing is disabled in `lmd` for performance reasons and also because it's mostly useless. New
-versions of Chrome have a bug with compositing disabled which you can fix by disabling the new (and
-not great) desktop design. Just go to `chrome://flags`, search for "Chrome Refresh 2023", and simply
-disable it.
 
 
 ## `lmd-japanese-input`
@@ -108,28 +103,34 @@ Then reboot.
 
 # Gaming
 
-`lmd` comes with a powerful gaming setup, not installed by default because it's fairly heavy. To
-install it, paste the following in a terminal:
+`lmd` linux comes with a sophisticated gaming setup allowing you to play almost all your Steam,
+Epic. GOG or Amazon Prime games. They may even play faster than on Windows. To install it, paste the
+following in a terminal:
 
 ```shell
 curl -L lmd-linux.github.io/gaming | sudo bash
 ```
 
-A number of tools and configurations, some not available elsewhere, are installed to make gaming
-faster and better. Among them (not an exhaustive list):
+If you have an Nvidia GPU please refer to the
+[NVIDIA Proprietary Driver instructions for Debian]( https://wiki.debian.org/NvidiaGraphicsDrivers).
+The latest drivers for AMD and Intel GPUS, whether discrete or integrated, are already installed.
+
+This will automatically install a number of tools and low-level configurations, some of them not
+available anywhere else, as well as the following packages:
 
 
-## MangoHud
+## MangoHud — https://github.com/flightlessmango/MangoHud
 
 Default hotkeys are `Left_Shift+Equal` to toggle the HUD and `Left_Shift+Minus` to cycle through the
 various FPS limit values.
 
 
-## Steam installer
+## Steam installer — https://store.steampowered.com
 
-Click on the Steam Installer entry in your desktop menu to automatically install and setup Steam.
+Click on the Steam Installer entry in your desktop menu to automatically install and setup the Steam
+client..
 
-If you want to use MangoHud and/or GameMode in a game, click on the cog icon to the right of the
+If you want to use MangoHud and/or GameMode in a Steam game, click on the cog icon to the right of the
 game page, select Properties, and in the General tab add one of these in the LAUNCH OPTIONS box:
 
 ```shell
@@ -139,7 +140,7 @@ gamemoderun mangohud %command%
 ```
 
 
-## Heroic
+## Heroic — https://heroicgameslauncher.com
 
 Use it for Epic, GOG, Amazon Prime as well as manually installed games. You can enable and configure
 MangoHud, GameMode and gamescope in the UI. You can also download and manage Wine GE and Proton GE
@@ -147,7 +148,7 @@ versions, or choose the Wine version provided by `lmd` as a backup. You can even
 games into Steam in case you want to use its Big Picture Mode as a launcher for example.
 
 
-## Retroarch
+## Retroarch — https://www.retroarch.com
 
 Comes with some basic pre-configuration. Don't forget to go into the Online Updater in the main
 menu, and run all the Update utilities (Core Info Files, Controller Profiles, etc…). Also, make sure
