@@ -52,7 +52,7 @@ and GNOME Keyring which makes the system hang at shutdown. All will be fine afte
 Chrome comes pre-installed but is optional. You can remove it with:
 
 ```shell
-sudo apt purge google-chrome-stable```
+sudo apt purge google-chrome-stable
 ```
 
 
