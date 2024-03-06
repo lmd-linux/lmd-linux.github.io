@@ -3,6 +3,10 @@
 TARGET_VOLUME="$(mount | grep ' /target ' | cut -d ' ' -f 1)"
 DEB_SOURCE="deb http://deb.debian.org/debian"
 
+# Enable BTRFS compression
+mount -o remount,compress=zstd:3 /target
+btrfs filesystem defragment -r -czstd -f /
+
 # Create @home subvolume
 mount "${TARGET_VOLUME}" /mnt
 cd /mnt
@@ -51,6 +55,7 @@ apt autopurge -y
 rm -rf /etc/network
 sed 's/[ \t]\+/ /g' -i /etc/fstab
 sed '/ \/ btrfs /{p;s/^\([^ ]*\) \/ \(.*\)rootfs/\1 \/home \2home/;}' -i /etc/fstab
+sed 's/subvol=/compress=zstd:3,subvol=/' -i /etc/fstab
 env | grep '^LANG=' > /etc/locale.conf
 EOF
 
