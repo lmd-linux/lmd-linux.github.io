@@ -34,18 +34,18 @@ Description: Packages and configurations for the GPD Pocket
 
 Package: gpd-win
 Architecture: all
-Version: 1
+Version: 1.1
 Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
 Installed-Size: 28
-Depends: firmware-intel-sound, lmd-minimal
-Filename: pool/stable/all/gpd-win_1_all.deb
-Size: 5512
-MD5sum: 1a3d02bc944cc67a9f6d5fdc25070a74
-SHA1: af1c705945eaeff131ea46b7351d587f7063aa2c
-SHA256: d7773d2de0817a3d7e8087c8b79c41eb037d9e83b681b4e2a06ed0de352c8616
-SHA512: c73573229f15b7fff80e72869d68fbde0092067340b0c97b3fff3fd79c28466e057fd586beea8354cc070673d9c2356a1f066e3dba668585caf6f9dd1815c329
+Depends: firmware-intel-sound, lmd-minimal, tlp
+Filename: pool/stable/all/gpd-win_1.1_all.deb
+Size: 5532
+MD5sum: 9998c5fcc627f3bcd913cb6e05ea2764
+SHA1: 3ba367593af755fa4e53fc21b8490f17d1a9b0a7
+SHA256: 7d22476f603e58b836a05c311f71bd7fd6c935ab5539986794ff4b64dd512285
+SHA512: d47bcbddd21d709ba7f9e5560dead2e759c08b65e6b01955004d52aa1938be12a3bb35b3a6498bab4c83456229b2677e0ad002a8ad3a5b28c330d6f9691a9ef0
 Description: Packages and configurations for the GPD Pocket
  Packages and configuration for a minimal lmd Linux installation
 
@@ -176,18 +176,18 @@ Description: Packages for lmd Linux server
 
 Package: lmd-update
 Architecture: all
-Version: 1
+Version: 1.1
 Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
 Installed-Size: 46
 Depends: curl, iputils-ping, jq
-Filename: pool/stable/all/lmd-update_1_all.deb
-Size: 7732
-MD5sum: d164e2665494aa1406ae62446dd4f896
-SHA1: 6d5c21e9b61c4134ad311f6ae6860e83004c2d8b
-SHA256: 12eeb91a23593fce994744adf4b17c21653b0d7ff1ef2b1654488a733f1486b9
-SHA512: 69dadcdc826841ea48b465442a6476b9cd232bf0471e9fda59d6cbbdf25f7e6ee4180efef6b1707d17a8c9d3e477d3dece9605ed3867ec5efdc555a105653af8
+Filename: pool/stable/all/lmd-update_1.1_all.deb
+Size: 7840
+MD5sum: c2eb7ac94762bef13176d67269412b23
+SHA1: a3d7f33b23cf653d2e87ea3a7412bcda24e028ff
+SHA256: e811bf8ad33ea53d30383cbd2c3882166905eb10dd218f8b37bd68f3ac6fcc6d
+SHA512: 99796122352fd022d95e18d028606a32d8a4a3f7194a8943e2a59c5c98e68ddf4b880717d78e1e7e0ea808c09c13e281f1666dabfbcb81a43d2b240b71024a79
 Description: automatic updates for lmd Linux
  Services, scripts and configuration for automatic updates of lmd Linux
 
