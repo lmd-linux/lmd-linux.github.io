@@ -1,3 +1,20 @@
+Package: gpd-win
+Architecture: all
+Version: 1.1
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 28
+Depends: firmware-intel-sound, lmd-minimal, tlp
+Filename: pool/testing/all/gpd-win_1.1_all.deb
+Size: 5532
+MD5sum: 9998c5fcc627f3bcd913cb6e05ea2764
+SHA1: 3ba367593af755fa4e53fc21b8490f17d1a9b0a7
+SHA256: 7d22476f603e58b836a05c311f71bd7fd6c935ab5539986794ff4b64dd512285
+SHA512: d47bcbddd21d709ba7f9e5560dead2e759c08b65e6b01955004d52aa1938be12a3bb35b3a6498bab4c83456229b2677e0ad002a8ad3a5b28c330d6f9691a9ef0
+Description: Packages and configurations for the GPD Pocket
+ Packages and configuration for a minimal lmd Linux installation
+
 Package: lmd-update
 Architecture: all
 Version: 1.1
