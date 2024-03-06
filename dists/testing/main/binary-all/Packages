@@ -1,34 +1,17 @@
-Package: lmd-minimal
+Package: gpd-win
 Architecture: all
-Version: 1.1
+Version: 1
 Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
-Installed-Size: 18
-Depends: apt-transport-https, base-files, ca-certificates, fontconfig-config, lsb-release, systemd-timesyncd
-Filename: pool/testing/all/lmd-minimal_1.1_all.deb
-Size: 2156
-MD5sum: b77681b02cce8e126c0e9a69322933d7
-SHA1: fd0b851b5d808904e0c43769b6f75362118b945d
-SHA256: 1426376527d5b34eb24026845b858d6e590d9f9c2070b884fecd12815cbe5b64
-SHA512: b6c2708ee2f78f0061494fd033ddbff796bf191012141848861292c263701ce2bf13718bd25f25213227ef0d3cbc0139ba9411dd1c00b5ca7c96d438bb2ef6d1
-Description: Minimal set of packages for lmd Linux
- Packages and configuration for a minimal lmd Linux installation
-
-Package: lmd-minimal
-Architecture: all
-Version: 1.2
-Priority: important
-Section: misc
-Maintainer: lmd Linux <lmd.linux@gmail.com>
-Installed-Size: 18
-Depends: apt-transport-https, base-files, ca-certificates, fontconfig-config, lsb-release, systemd-timesyncd
-Filename: pool/testing/all/lmd-minimal_1.2_all.deb
-Size: 2148
-MD5sum: 8adab49aaeda5583b5d415b2ad9dc6cf
-SHA1: a0128c394d4f5fc1f89076061bef45f40ad9dd6e
-SHA256: 56524c77ea2c0bb6260b0e2bd9cfa658493595b3738010b7fe7c19a30c4adfbb
-SHA512: 71276b4f50674f3a883afb091e68b51ef45ec87a317c91019dad78e8de2b05a6b102aeb782b0628a2a913bfba18e58e919ccc315e8b3cff84ff01789157dbea8
-Description: Minimal set of packages for lmd Linux
+Installed-Size: 28
+Depends: firmware-intel-sound, lmd-minimal
+Filename: pool/testing/all/gpd-win_1_all.deb
+Size: 5512
+MD5sum: 1a3d02bc944cc67a9f6d5fdc25070a74
+SHA1: af1c705945eaeff131ea46b7351d587f7063aa2c
+SHA256: d7773d2de0817a3d7e8087c8b79c41eb037d9e83b681b4e2a06ed0de352c8616
+SHA512: c73573229f15b7fff80e72869d68fbde0092067340b0c97b3fff3fd79c28466e057fd586beea8354cc070673d9c2356a1f066e3dba668585caf6f9dd1815c329
+Description: Packages and configurations for the GPD Pocket
  Packages and configuration for a minimal lmd Linux installation
 
