@@ -28,7 +28,16 @@ d-i clock-setup/ntp boolean true
 
 d-i partman-auto/init_automatically_partition select biggest_free
 d-i partman-auto/disk string /dev/vda
-d-i partman-auto/choose_recipe select atomic
+
+d-i partman-auto/expert_recipe string \
+    root :: \
+        2000 10000 -1 ext4 \
+            $primary{ } $bootable{ } \
+            method{ format } format{ } \
+            use_filesystem{ } filesystem{ ext4 } \
+            mountpoint{ / } \
+        .
+
 d-i partman-auto/method string regular
 d-i partman-md/confirm boolean true
 d-i partman-partitioning/confirm_write_new_label boolean true
