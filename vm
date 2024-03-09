@@ -18,9 +18,8 @@ d-i mirror/http/proxy string
 d-i mirror/suite string stable
 
 d-i passwd/make-user boolean false
-
-d-i passwd/root-password password foobarbaz
-d-i passwd/root-password-again password foobarbaz
+d-i passwd/root-login boolean true
+d-i passwd/root-password-crypted password !
 
 d-i clock-setup/utc boolean true
 d-i time/zone string Etc/UTC
@@ -31,7 +30,7 @@ d-i partman-auto/disk string /dev/vda
 
 d-i partman-auto/expert_recipe string \
     root :: \
-        2000 10000 -1 ext4 \
+        1000 20000 -1 ext4 \
             $primary{ } $bootable{ } \
             method{ format } format{ } \
             use_filesystem{ } filesystem{ ext4 } \
