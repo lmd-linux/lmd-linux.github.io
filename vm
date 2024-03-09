@@ -38,6 +38,7 @@ d-i partman-auto/expert_recipe string \
             mountpoint{ / } \
         .
 
+d-i partman-basicfilesystems/no_swap boolean false
 d-i partman-auto/method string regular
 d-i partman-md/confirm boolean true
 d-i partman-partitioning/confirm_write_new_label boolean true
