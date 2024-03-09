@@ -1,3 +1,5 @@
+d-i debconf/priority select critical
+
 d-i debian-installer/locale string en_US
 d-i keyboard-configuration/xkb-keymap select us
 
