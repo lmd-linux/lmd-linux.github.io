@@ -27,7 +27,6 @@ d-i clock-setup/ntp boolean true
 
 d-i partman-auto/init_automatically_partition select biggest_free
 d-i partman-auto/choose_recipe select atomic
-d-i partman-auto/disk string /dev/vda
 d-i partman-md/confirm boolean true
 d-i partman-partitioning/confirm_write_new_label boolean true
 d-i partman/choose_partition select finish
@@ -67,6 +66,7 @@ d-i preseed/late_command string \
     in-target --pass-stdout apt-get install -y lsb-release; \
     in-target --pass-stdout apt-get install -y openssh-server; \
     in-target --pass-stdout apt-get install -y systemd-timesyncd; \
+    in-target --pass-stdout apt-get install -y qemu-guest-agent; \
     in-target --pass-stdout apt autopurge -y; \
     if [ -n "${ip}" ]; then \
         if [ "${ip}" = "${ip%/*}" ]; then \
