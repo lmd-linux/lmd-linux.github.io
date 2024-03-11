@@ -80,6 +80,9 @@ d-i preseed/late_command string \
     in-target --pass-stdout apt-get install -y systemd-timesyncd; \
     in-target --pass-stdout apt-get install -y qemu-guest-agent; \
     in-target --pass-stdout apt autopurge -y; \
+    if [[ -n "${pkg}" ]]; then \
+        in-target --pass-stdout apt install -y --no-install-recommends ${pkg//,/ }; \
+    fi; \
     if [ -n "${ip}" ]; then \
         if [ "${ip}" = "${ip%/*}" ]; then \
             ip="${ip}/24"; \
