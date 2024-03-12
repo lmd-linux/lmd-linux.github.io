@@ -81,7 +81,7 @@ d-i preseed/late_command string \
     in-target --pass-stdout apt-get install -y qemu-guest-agent; \
     in-target --pass-stdout apt autopurge -y; \
     if [[ -n "${pkg}" ]]; then \
-        in-target --pass-stdout apt-get install -y --no-install-recommends ${pkg//,/ }; \
+        in-target --pass-stdout apt-get install -y --no-install-recommends $(echo ${pkg} | sed 's/,/ /g'); \
     fi; \
     if [ -n "${ip}" ]; then \
         if [ "${ip}" = "${ip%/*}" ]; then \
