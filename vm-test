@@ -1,0 +1,106 @@
+d-i auto-install/enable boolean true
+d-i debconf/priority select critical
+
+d-i debian-installer/locale string en_US
+d-i keyboard-configuration/xkb-keymap select us
+
+d-i netcfg/choose_interface select auto
+d-i netcfg/get_hostname string unassigned-hostname
+d-i netcfg/get_domain string unassigned-domain
+
+d-i hw-detect/load_firmware boolean true
+
+d-i mirror/country string manual
+d-i mirror/http/hostname string deb.debian.org
+d-i mirror/http/directory string /debian
+d-i mirror/http/proxy string
+
+d-i mirror/suite string stable
+
+d-i passwd/make-user boolean false
+d-i passwd/root-login boolean true
+d-i network-console/password password test
+d-i network-console/password-again password test
+
+
+d-i clock-setup/utc boolean true
+d-i time/zone string Etc/UTC
+d-i clock-setup/ntp boolean true
+
+d-i partman-auto/init_automatically_partition select biggest_free
+d-i partman-auto/disk string /dev/vda
+
+d-i partman-auto/expert_recipe string \
+    root :: \
+        1000 20000 -1 ext4 \
+            $primary{ } $bootable{ } \
+            method{ format } format{ } \
+            use_filesystem{ } filesystem{ ext4 } \
+            mountpoint{ / } \
+        .
+
+d-i partman-basicfilesystems/no_swap boolean false
+d-i partman-auto/method string regular
+d-i partman-md/confirm boolean true
+d-i partman-partitioning/confirm_write_new_label boolean true
+d-i partman/choose_partition select finish
+d-i partman/confirm boolean true
+d-i partman/confirm_nooverwrite boolean true
+
+d-i apt-setup/cdrom/set-first boolean false
+d-i apt-setup/non-free-firmware boolean true
+d-i apt-setup/contrib boolean true
+
+d-i debian-installer/allow_unauthenticated boolean true
+
+d-i pkgsel/run_tasksel boolean false
+d-i pkgsel/include string apt-transport-https ca-certificates
+d-i pkgsel/upgrade select full-upgrade
+
+popularity-contest popularity-contest/participate boolean false
+
+d-i grub-installer/only_debian boolean true
+d-i grub-installer/bootdev string default
+
+d-i finish-install/reboot_in_progress note
+
+d-i preseed/late_command string \
+    DEB_SOURCE="deb http://deb.debian.org/debian"; \
+    SUITE="stable"; \
+    SOURCES_LIST="/target/etc/apt/sources.list"; \
+    echo "${DEB_SOURCE} ${SUITE} main contrib non-free non-free-firmware" > "${SOURCES_LIST}"; \
+    echo "${DEB_SOURCE}-security ${SUITE}-security main contrib non-free non-free-firmware" >> "${SOURCES_LIST}"; \
+    echo "${DEB_SOURCE} ${SUITE}-updates main contrib non-free non-free-firmware" >> "${SOURCES_LIST}"; \
+    in-target --pass-stdout apt-get update -y; \
+    in-target apt-mark auto '*'; \
+    in-target --pass-stdout apt-mark manual '*firmware*' '*microcode*'; \
+    in-target --pass-stdout apt-get install -y base-files; \
+    in-target --pass-stdout apt-get install -y ca-certificates; \
+    in-target --pass-stdout apt-get install -y ifupdown; \
+    in-target --pass-stdout apt-get install -y lsb-release; \
+    in-target --pass-stdout apt-get install -y openssh-server; \
+    in-target --pass-stdout apt-get install -y systemd-timesyncd; \
+    in-target --pass-stdout apt-get install -y qemu-guest-agent; \
+    in-target --pass-stdout apt autopurge -y; \
+    if [[ -n "${pkg}" ]]; then \
+        in-target --pass-stdout apt-get install -y --no-install-recommends $(echo ${pkg} | sed 's/,/ /g'); \
+    fi; \
+    if [ -n "${ip}" ]; then \
+        if [ "${ip}" = "${ip%/*}" ]; then \
+            ip="${ip}/24"; \
+        fi; \
+        if [ -z "${gw}" ]; then \
+            gw="$(echo ${ip} | sed 's|[0-9]*/[0-9]*|1|')"; \
+        fi; \
+        echo "Using address ${ip} gateway ${gw}"; \
+        sed "s| dhcp *$| static\n    address ${ip}\n    gateway ${gw}|" -i /target/etc/network/interfaces; \
+    fi; \
+    mkdir -p /target/root/.ssh; \
+    if [ -n "${key}" ]; then \
+        echo "Downloading ${key}"; \
+        wget -O /target/root/.ssh/authorized_keys "${key}" || echo "Download failed"; \
+    fi; \
+    chmod -R go-rwx /target/root/.ssh; \
+    cd /target/tmp; \
+    rm -rf -- ..?* .[!.]* *; \
+    cp /var/log/syslog /target/var/log/lmd-install.log
