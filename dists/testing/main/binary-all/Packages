@@ -8,10 +8,10 @@ Installed-Size: 19
 Depends: apt-transport-https, base-files, ca-certificates, fontconfig-config, lsb-release, systemd-timesyncd
 Filename: pool/testing/all/lmd-minimal_1.3_all.deb
 Size: 2528
-MD5sum: 0fdf56defcbf3e83b07fb80c03166147
-SHA1: 2c81c9ed0414d9b3a24d958af8d767df506b61f1
-SHA256: 824932b70fb6f8710b99b96c4c752aafd4ca56c8e5b0fae1bae60bbbf8cd7040
-SHA512: fc2e3b835b64ce788cf70301dab7c574c90eda66d68dd0cf68371c9cc2a7ef9ab7816dd3ffb7a20e465668f359c859e1901773f422f019b8b844943cd2cadc3a
+MD5sum: 43a457d113b02fb9d3af6b1c8c7a8040
+SHA1: f6ba9a821eb5a728574bb690266fc4ba432f2c70
+SHA256: 0762a564b9b036e7ec22bed508f03e52f83f19ea017a37dc07d53860c869c61f
+SHA512: 1e005119635a6c7567e8fa6ec5d8dfdd766f254d33d7b4216e11a65cb3df9cc24fe882a3cf861a42b7f6e3785c1cabf6b0ddc48fd424877ab020c97bb5ae302c
 Description: Minimal set of packages for lmd Linux
  Packages and configuration for a minimal lmd Linux installation
 
