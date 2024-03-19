@@ -1,34 +1,17 @@
-Package: gpd-win
+Package: lmd-minimal
 Architecture: all
-Version: 1.1
+Version: 1.3
 Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
-Installed-Size: 28
-Depends: firmware-intel-sound, lmd-minimal, tlp
-Filename: pool/testing/all/gpd-win_1.1_all.deb
-Size: 5532
-MD5sum: 9998c5fcc627f3bcd913cb6e05ea2764
-SHA1: 3ba367593af755fa4e53fc21b8490f17d1a9b0a7
-SHA256: 7d22476f603e58b836a05c311f71bd7fd6c935ab5539986794ff4b64dd512285
-SHA512: d47bcbddd21d709ba7f9e5560dead2e759c08b65e6b01955004d52aa1938be12a3bb35b3a6498bab4c83456229b2677e0ad002a8ad3a5b28c330d6f9691a9ef0
-Description: Packages and configurations for the GPD Pocket
+Installed-Size: 19
+Depends: apt-transport-https, base-files, ca-certificates, fontconfig-config, lsb-release, systemd-timesyncd
+Filename: pool/testing/all/lmd-minimal_1.3_all.deb
+Size: 2528
+MD5sum: 0fdf56defcbf3e83b07fb80c03166147
+SHA1: 2c81c9ed0414d9b3a24d958af8d767df506b61f1
+SHA256: 824932b70fb6f8710b99b96c4c752aafd4ca56c8e5b0fae1bae60bbbf8cd7040
+SHA512: fc2e3b835b64ce788cf70301dab7c574c90eda66d68dd0cf68371c9cc2a7ef9ab7816dd3ffb7a20e465668f359c859e1901773f422f019b8b844943cd2cadc3a
+Description: Minimal set of packages for lmd Linux
  Packages and configuration for a minimal lmd Linux installation
-
-Package: lmd-update
-Architecture: all
-Version: 1.1
-Priority: important
-Section: misc
-Maintainer: lmd Linux <lmd.linux@gmail.com>
-Installed-Size: 46
-Depends: curl, iputils-ping, jq
-Filename: pool/testing/all/lmd-update_1.1_all.deb
-Size: 7840
-MD5sum: c2eb7ac94762bef13176d67269412b23
-SHA1: a3d7f33b23cf653d2e87ea3a7412bcda24e028ff
-SHA256: e811bf8ad33ea53d30383cbd2c3882166905eb10dd218f8b37bd68f3ac6fcc6d
-SHA512: 99796122352fd022d95e18d028606a32d8a4a3f7194a8943e2a59c5c98e68ddf4b880717d78e1e7e0ea808c09c13e281f1666dabfbcb81a43d2b240b71024a79
-Description: automatic updates for lmd Linux
- Services, scripts and configuration for automatic updates of lmd Linux
 
