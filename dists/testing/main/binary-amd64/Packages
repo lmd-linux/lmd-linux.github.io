@@ -1,0 +1,96 @@
+Package: mangoapp
+Architecture: amd64
+Version: 0.7.1-1
+Priority: optional
+Section: misc
+Source: mangohud
+Maintainer: Debian Games Team <team+pkg-games@tracker.debian.org>
+Installed-Size: 4074
+Depends: mangohud (= 0.7.1-1), libc6 (>= 2.36), libfmt9 (>= 9.1.0+ds1), libgcc-s1 (>= 4.2), libgl1, libglew2.2 (>= 2.2.0-4+b1), libglfw3 (>= 3.1), libspdlog1.12-fmt9, libx11-6
+Suggests: gamescope
+Filename: pool/testing/amd64/mangoapp_0.7.1-1_amd64.deb
+Size: 1147460
+MD5sum: 236a0ea18425c7a3b95b74006ba36a8a
+SHA1: 792b6c98ca269e9d56a27185bbd6433070d91c23
+SHA256: 2ae1a313ad0226ad07cddfa97575e06caad56290f6d1cafbddce0d3fca1501ec
+SHA512: d8f80b7e16a83b00a13f423cc15e620a1644ef9ff94b24ecfeda18fd6fcdfb063e7075a297d866c6cd5926bac9c8d5445df3241ebb3f01e90d6f99f51551cb5d
+Homepage: https://github.com/flightlessmango/MangoHud
+Description: Application to render MangoHud with gamescope
+ MangoHud is a highly customizable overlay for Vulkan and OpenGL application to
+ monitoring FPS, temperatures, CPU/GPU load and more.
+ .
+ This package contains an application called mangoapp to use mangohud with the
+ gamescope compositor.
+
+Package: mangohud
+Architecture: amd64
+Version: 0.7.1-1
+Multi-Arch: same
+Priority: optional
+Section: misc
+Maintainer: Debian Games Team <team+pkg-games@tracker.debian.org>
+Installed-Size: 6302
+Depends: libc6 (>= 2.36), libfmt9 (>= 9.1.0+ds1), libgcc-s1 (>= 4.2), libspdlog1.12-fmt9
+Recommends: mangoctl
+Suggests: libxnvctrl0, goverlay
+Filename: pool/testing/amd64/mangohud_0.7.1-1_amd64.deb
+Size: 1329572
+MD5sum: 93f82881ee083a85ff16b7dd3954a161
+SHA1: ccf5efb9d6b48177a0796b8c54d9b2f71b0ae834
+SHA256: 6be248021d31dae598a793869581db2e43afc161eb003bf83e0e0031766bc3ef
+SHA512: 8bec928ba7fe4080bce1c48ca186b07d72bec4065d98c1812a34be3c5604e00217dafdc631f03f408992ae11b7aae8df6c0a2f0b4d700285574eaac9e31b8db1
+Homepage: https://github.com/flightlessmango/MangoHud
+Description: Vulkan/OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more
+ MangoHud is a highly customizable overlay for Vulkan and OpenGL application to
+ monitoring FPS, temperatures, CPU/GPU load and more.
+ .
+ This package includes the libraries for MangoHud and includes a script called
+ mangohud to start it on any OpenGL or Vulkan application.
+ To get data for Nvidia GPUs, you need to install libxnvctrl0.
+
+Package: mangohudctl
+Architecture: amd64
+Version: 0.7.1-1
+Priority: optional
+Section: misc
+Source: mangohud
+Maintainer: Debian Games Team <team+pkg-games@tracker.debian.org>
+Installed-Size: 50
+Depends: mangohud (= 0.7.1-1), libc6 (>= 2.34)
+Filename: pool/testing/amd64/mangohudctl_0.7.1-1_amd64.deb
+Size: 12404
+MD5sum: e39124465f8ba0c9b0f1010c811f22bd
+SHA1: 79d8a442535d1d3d13297d634ec9e8b363120cba
+SHA256: 13c80bc53744c6e4c49f10d2ea09ddf6bdad11c9371ea1f75d3b5a1cbd55a67b
+SHA512: fe5e21454abbc8fc69441fbed478459a27df81a461814bf1143ec4f40d24f56e58146f79981e2398089f4c14a7863893384517fd5c7adc100824a02b60963b73
+Homepage: https://github.com/flightlessmango/MangoHud
+Description: Application to control MangoHud
+ MangoHud is a highly customizable overlay for Vulkan and OpenGL application to
+ monitoring FPS, temperatures, CPU/GPU load and more.
+ .
+ This package contains an optional CLI application to control MangoHud.
+
+Package: mangoplot
+Architecture: amd64
+Version: 0.7.1-1
+Priority: optional
+Section: misc
+Source: mangohud
+Maintainer: Debian Games Team <team+pkg-games@tracker.debian.org>
+Installed-Size: 49
+Depends: mangohud (= 0.7.1-1), python3, python3-numpy, python3-matplotlib
+Filename: pool/testing/amd64/mangoplot_0.7.1-1_amd64.deb
+Size: 14056
+MD5sum: 340bab83a4981b99345da355b82a48a2
+SHA1: ea2730a9020520869c38846e27391e4fa1c4826e
+SHA256: dc98a72ecdc5b616610d9fb8cdbb4fd92a6db440994b880f7a4103975a890ec0
+SHA512: 034b02718d624ebbd2ed5ec482db0b6962fa24f801ca1be1ba0fe1f8116e10ac4efc480cd92ed71ef7d5a2ca4eb7a9b04efca3a6cd41ed515f9067cb26d8c1be
+Homepage: https://github.com/flightlessmango/MangoHud
+Description: Plotting script for local visualization of FPS data
+ mangoplot is a plotting script that is shipped with MangoHud:
+ in a given folder, it takes each log file, makes a 1D heatmap of its
+ framerates, then stacks the heats maps vertically to form a 2D graph
+ for easy visual comparison between benchmarks.
+ .
+ This package contains a plotting script to visualize FPS offline.
+
