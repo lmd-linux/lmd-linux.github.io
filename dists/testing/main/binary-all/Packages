@@ -1,0 +1,19 @@
+Package: lmd-desktop
+Architecture: all
+Version: 1
+Multi-Arch: foreign
+Priority: important
+Section: metapackages
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 9
+Depends: dbus-broker, lmd-minimal, lmd-update, network-manager, sudo
+Recommends: firmware-linux, fonts-noto, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-plugins-ugly, gvfs-backends, gvfs-fuse, i965-va-driver-shaders, intel-media-va-driver-non-free, lmd-cmdline, pipewire-audio, unrar, unzip
+Filename: pool/testing/all/lmd-desktop_1_all.deb
+Size: 1708
+MD5sum: 40e51c9356acd22c318234fff0e5ed10
+SHA1: 0d811d33538beace83a49cf564649d9ced31e1db
+SHA256: fa8ad1915b612144f06515f3db95d3c45ef3d22bce89fe4919576da689562c6a
+SHA512: 0b7082fe733e04a924f6768835bef2db327598c9915772ac2241f7dd565a999e9e90105ac70887ef59e5a7d7de015352b197f38ee9efcfbac32e6842a213b0a1
+Homepage: https://lmd-linux.github.io/lmd-desktop
+Description: Packages for lmd Linux desktop
+
