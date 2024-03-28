@@ -4,15 +4,15 @@ Version: 1.2
 Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
-Installed-Size: 3015
+Installed-Size: 3021
 Depends: gamemode, lmd-desktop, mangohud:i386, mangohud:amd64, mesa-utils, protontricks, retroarch, steam-installer
 Recommends: gstreamer1.0-plugins-bad:i386, gstreamer1.0-plugins-base:i386, gstreamer1.0-plugins-good:i386, gstreamer1.0-plugins-ugly:i386
 Filename: pool/testing/amd64/lmd-gaming_1.2_amd64.deb
-Size: 1064632
-MD5sum: d9191f57d6e3eb0674dd733187738961
-SHA1: 5985a4b4e4e04df41a47994c98e2b11e364b35a5
-SHA256: 06c5f1340d8a0aea9193dd1e36c1416af4ede7d570b490c182ad51841c8ecb27
-SHA512: a104d6574d04a3905f7cdf76207dd2bc547161f61b30e1dd820af629b561610b5a8dba3c489f7ca48f0e90bd6a35d77d381a5fcd6de8e389f00031ba7b673917
+Size: 1067312
+MD5sum: bbf4af9890c2dc05976b3fabf3705f08
+SHA1: 592ba48bc4d03feb1531c2eb78fab8b226fe8312
+SHA256: f80adc13578b72e51294bf92a83f233dc5e5c794d0fbad1f47299f3f4dc4c356
+SHA512: 4d570636642181c689a753280874d93eb9877ff9e4a957273ee69ec73e64454ae0546a6af17abe97e972067b99503fe54e0a1c9032189359a01526d526b9008b
 Description: Gaming metapackage for lmd Linux
  Collection of gaming packages and configurations for lmd Linux
 
