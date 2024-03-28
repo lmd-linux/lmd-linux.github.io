@@ -12,7 +12,9 @@ fi
 
 for PKG in ${TESTING_PKGS}; do
     echo "Found package ${PKG}"
-    mv ${PKG} ${PKG/\/testing\//\/stable\/}
+    DEST=${PKG/\/testing\//\/stable\/}
+    mkdir -p $(dirname ${DEST})
+    mv ${PKG} ${DEST}
 done
 
 echo
