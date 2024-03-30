@@ -143,8 +143,8 @@ The first one should almost always work. Very rarely you will have to add `--dls
 second line. And even more rarely, you will have to disable MangoHud entirely like on the third
 line.
 
-If you have an old device with partial or broken support you will also often have to prefix each of
-these lines with `PROTON_USE_WINED3D=1`, for example:
+If you have an old device with inexistent, incomplete or broken Vulkan support, you will also often
+have to prefix each of these lines with `PROTON_USE_WINED3D=1`, for example:
 
 ```shell
 PROTON_USE_WINED3D=1 mangohud gamemoderun %command%
