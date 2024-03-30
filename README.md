@@ -134,10 +134,19 @@ If you want to use MangoHud and/or GameMode in a Steam game, click on the cog ic
 game page, select Properties, and in the General tab add one of these in the LAUNCH OPTIONS box:
 
 ```shell
-mangohud %command%
+mangohud gamemoderun %command%
+mangohud --dlsym gamemoderun %command%
 gamemoderun %command%
-gamemoderun mangohud %command%
 ```
+
+The first one should almost always work. Very rarely you will have to add `--dlsym` like on the
+second line. And even more rarely, you will have to disable MangoHud entirely like on the third
+line.
+
+If you have an old device with partial or broken support you will also often have to prefix each of
+these lines with `PROTON_USE_WINED2D=1`, for example:
+
+```PROTON_USE_WINED3D=1 mangohud gamemoderun %command%```
 
 
 ## Heroic — https://heroicgameslauncher.com
