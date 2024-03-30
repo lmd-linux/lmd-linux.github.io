@@ -146,7 +146,9 @@ line.
 If you have an old device with partial or broken support you will also often have to prefix each of
 these lines with `PROTON_USE_WINED3D=1`, for example:
 
-```PROTON_USE_WINED3D=1 mangohud gamemoderun %command%```
+```shell
+PROTON_USE_WINED3D=1 mangohud gamemoderun %command%
+```
 
 
 ## Heroic — https://heroicgameslauncher.com
