@@ -144,7 +144,7 @@ second line. And even more rarely, you will have to disable MangoHud entirely li
 line.
 
 If you have an old device with partial or broken support you will also often have to prefix each of
-these lines with `PROTON_USE_WINED2D=1`, for example:
+these lines with `PROTON_USE_WINED3D=1`, for example:
 
 ```PROTON_USE_WINED3D=1 mangohud gamemoderun %command%```
 
