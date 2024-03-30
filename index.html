@@ -223,13 +223,23 @@ customElements.define('markdown-style', MarkdownStyle);</script><markdown-style 
       If you want to use MangoHud and/or GameMode in a Steam game, click on the cog icon to the right of the
       game page, select Properties, and in the General tab add one of these in the LAUNCH OPTIONS box:
     </p>
-    <pre class="language-shell"><code class="language-shell code-highlight"><span class="code-line line-number" line="1">mangohud %command%
-</span><span class="code-line line-number" line="2">gamemoderun %command%
-</span><span class="code-line line-number" line="3">gamemoderun mangohud %command%
-</span></code><div onclick="copied(this)" data-code="mangohud %command%
+    <pre class="language-shell"><code class="language-shell code-highlight"><span class="code-line line-number" line="1">mangohud gamemoderun %command%
+</span><span class="code-line line-number" line="2">mangohud <span class="token parameter variable">--dlsym</span> gamemoderun %command%
+</span><span class="code-line line-number" line="3">gamemoderun %command%
+</span></code><div onclick="copied(this)" data-code="mangohud gamemoderun %command%
+mangohud --dlsym gamemoderun %command%
 gamemoderun %command%
-gamemoderun mangohud %command%
 " class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
+    <p>
+      The first one should almost always work. Very rarely you will have to add <code>--dlsym</code> like on the
+      second line. And even more rarely, you will have to disable MangoHud entirely like on the third
+      line.
+    </p>
+    <p>
+      If you have an old device with partial or broken support you will also often have to prefix each of
+      these lines with <code>PROTON_USE_WINED2D=1</code>, for example:
+    </p>
+    <p><code>PROTON_USE_WINED3D=1 mangohud gamemoderun %command%</code></p>
     <h2 id="heroic--httpsheroicgameslaunchercom"><a class="anchor" aria-hidden="true" tabindex="-1" href="#heroic--httpsheroicgameslaunchercom"><span class="octicon octicon-link"></span></a>Heroic — <a href="https://heroicgameslauncher.com/">https://heroicgameslauncher.com</a></h2>
     <p>
       Use it for Epic, GOG, Amazon Prime as well as manually installed games. You can enable and configure
