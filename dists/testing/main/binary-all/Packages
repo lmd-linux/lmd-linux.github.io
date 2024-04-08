@@ -1,18 +1,17 @@
-Package: lmd-japanese-input
+Package: lmd-minimal
 Architecture: all
-Version: 1.1
+Version: 1.4
 Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
-Installed-Size: 17
-Depends: fcitx5-mozc, fonts-noto-cjk, fonts-noto-cjk-extra, lmd-desktop
-Filename: pool/testing/all/lmd-japanese-input_1.1_all.deb
-Size: 2520
-MD5sum: c7d4cddf70be6d86bdec6dfc2f50d9fd
-SHA1: 07b66b15b7bddf09318709bf72f34dc213f7696b
-SHA256: 4ee8aae90d904b10d3fa78ce11f2248201245f0093447ad23aee812895f50330
-SHA512: b721a0019563561caf7ea7790e43821b85fee4180012aefb4c208f3da7dfc4d5dba42e631e0fb0fa0fc965268b63107170eaa00747fb1a4343bc47ee4d50b534
-Description: Japanese input for lmd Linux
- Tools and configuration for Japanese input in lmd Linux
- The default toggling key combination is Super+Space (Super is sometimes called the Windows key).
+Installed-Size: 22
+Depends: apt-transport-https, base-files, ca-certificates, fontconfig-config, lsb-release, systemd-timesyncd
+Filename: pool/testing/all/lmd-minimal_1.4_all.deb
+Size: 2620
+MD5sum: 33b1562dd80bc5bac55d325f37994783
+SHA1: 2b0ccc42f5b9297056050c66722709011acb5565
+SHA256: 63d30d0a8b6c629d822ca371ac952bab6222de35db384bd26a398841dbc58a6c
+SHA512: 24d4dd98ab1f53b51b47e423c4392b649e57187622472c3f405e6d4618af23b9fa69654b62015705678e7f475267ed4b9fa30da1c787e82993ff8f6fcce0aff5
+Description: Minimal set of packages for lmd Linux
+ Packages and configuration for a minimal lmd Linux installation
 
