@@ -32,6 +32,23 @@ SHA512: 5ee53fdf1f90d6e4f3c4c4d643bcfd4168cabc9d2c103f2131c7c911e3b7063b2e34c60e
 Description: Packages and configurations for the GPD Pocket
  Packages and configuration for a minimal lmd Linux installation
 
+Package: gpd-win2
+Architecture: all
+Version: 1
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 16
+Depends: lmd-minimal, tlp
+Filename: pool/stable/all/gpd-win2_1_all.deb
+Size: 2168
+MD5sum: a867b018764719b367166c27fb92b84b
+SHA1: fbd7a886c90bfccec049f957c4cb043c061fc2f2
+SHA256: e707ba4889a6e3028fd1f115dca69d94b6741607c8fec9d037f2e32b86c1ff73
+SHA512: e22284f2d66d3fdef20d15a1b3b6372b5f55f3a6d721504f977430026bbc1fd6ba75202891d1a5b76bed2e7bf9007de19f078972ceea5c8b70e718b4396ed88c
+Description: Packages and configurations for the GPD Win 2
+ Packages and configuration for a minimal lmd Linux installation
+
 Package: gpd-win
 Architecture: all
 Version: 1.1
