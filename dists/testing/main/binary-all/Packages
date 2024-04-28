@@ -15,3 +15,20 @@ SHA512: 662bc31da757f4487782c70d9c350515511a947e9edc7b3511f1f2b7d20f61fcf44f9c84
 Description: Packages and configurations for the GPD Win 2
  Packages and configuration for a minimal lmd Linux installation
 
+Package: gpd-win
+Architecture: all
+Version: 1.2
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 31
+Depends: firmware-intel-sound, lmd-minimal, tlp
+Filename: pool/testing/all/gpd-win_1.2_all.deb
+Size: 5628
+MD5sum: 52ece00e6d1d482f860d931061b931a7
+SHA1: 73a608e6cc0a29d853b661887b3a36b6c62972be
+SHA256: 9224f03f8bcbc91f5bd86f7b1388249a51b80a5a498fb98a7115b12dd823f5f8
+SHA512: 0f3ae5215ec9e8f36550a80e9feac9a5d2a0f0d339050b0c8329679a46af6686ca2b257f0837f139ef96c7e87c0e4883b9918c991764feb5556e4c1db005e05e
+Description: Packages and configurations for the GPD Pocket
+ Packages and configuration for a minimal lmd Linux installation
+
