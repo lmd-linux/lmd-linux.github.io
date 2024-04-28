@@ -7,11 +7,11 @@ Maintainer: lmd Linux <lmd.linux@gmail.com>
 Installed-Size: 16
 Depends: lmd-minimal, tlp
 Filename: pool/testing/all/gpd-win2_1_all.deb
-Size: 2168
-MD5sum: a867b018764719b367166c27fb92b84b
-SHA1: fbd7a886c90bfccec049f957c4cb043c061fc2f2
-SHA256: e707ba4889a6e3028fd1f115dca69d94b6741607c8fec9d037f2e32b86c1ff73
-SHA512: e22284f2d66d3fdef20d15a1b3b6372b5f55f3a6d721504f977430026bbc1fd6ba75202891d1a5b76bed2e7bf9007de19f078972ceea5c8b70e718b4396ed88c
+Size: 2164
+MD5sum: 54d2324bffd67e088c4204e976a6aeea
+SHA1: 871b184bdc85d94caeb6ae44a6902dc3c35593a2
+SHA256: 6defa69e444083f389f8c33b8a7e2c03382e8c0707be553a0ab59d97893e495c
+SHA512: 662bc31da757f4487782c70d9c350515511a947e9edc7b3511f1f2b7d20f61fcf44f9c84f285b7b49997bcb6a32dd97b8067503d17c96597842088262b727602
 Description: Packages and configurations for the GPD Win 2
  Packages and configuration for a minimal lmd Linux installation
 
