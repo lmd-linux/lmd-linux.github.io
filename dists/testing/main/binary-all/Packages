@@ -1,17 +1,17 @@
-Package: lmd-minimal
+Package: gpd-win2
 Architecture: all
-Version: 1.4
+Version: 1
 Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
-Installed-Size: 22
-Depends: apt-transport-https, base-files, ca-certificates, fontconfig-config, lsb-release, systemd-timesyncd
-Filename: pool/testing/all/lmd-minimal_1.4_all.deb
-Size: 2620
-MD5sum: 33b1562dd80bc5bac55d325f37994783
-SHA1: 2b0ccc42f5b9297056050c66722709011acb5565
-SHA256: 63d30d0a8b6c629d822ca371ac952bab6222de35db384bd26a398841dbc58a6c
-SHA512: 24d4dd98ab1f53b51b47e423c4392b649e57187622472c3f405e6d4618af23b9fa69654b62015705678e7f475267ed4b9fa30da1c787e82993ff8f6fcce0aff5
-Description: Minimal set of packages for lmd Linux
+Installed-Size: 16
+Depends: lmd-minimal, tlp
+Filename: pool/testing/all/gpd-win2_1_all.deb
+Size: 2168
+MD5sum: a867b018764719b367166c27fb92b84b
+SHA1: fbd7a886c90bfccec049f957c4cb043c061fc2f2
+SHA256: e707ba4889a6e3028fd1f115dca69d94b6741607c8fec9d037f2e32b86c1ff73
+SHA512: e22284f2d66d3fdef20d15a1b3b6372b5f55f3a6d721504f977430026bbc1fd6ba75202891d1a5b76bed2e7bf9007de19f078972ceea5c8b70e718b4396ed88c
+Description: Packages and configurations for the GPD Win 2
  Packages and configuration for a minimal lmd Linux installation
 
