@@ -32,3 +32,20 @@ SHA512: 0f3ae5215ec9e8f36550a80e9feac9a5d2a0f0d339050b0c8329679a46af6686ca2b257f
 Description: Packages and configurations for the GPD Pocket
  Packages and configuration for a minimal lmd Linux installation
 
+Package: lmd-cmdline
+Architecture: all
+Version: 1.2
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 19
+Depends: bash-completion, git, man, powerline, powerline-gitstatus, tmux, vim-addon-manager, vim-nox
+Filename: pool/testing/all/lmd-cmdline_1.2_all.deb
+Size: 2700
+MD5sum: 71a0d682d9192ad8e3ca65106f18e4f2
+SHA1: 6481ede8712416fde7bbdf3343cc074eff04cd91
+SHA256: 30d383b6ca587bee626c3a3a0a31e8c4f511670e0ebf609e9f49b0eecd327f36
+SHA512: 96135a85ee99e9f2b00b612128c84f78c11ec8fd2b535897d3cc109fb0a9126c59c13d5030857f01b2228eaa5cd487f2999c947b7484fd92d12978fc5a64d78a
+Description: command-line tools
+ A collection of useful command-line tools and their default configuration
+
