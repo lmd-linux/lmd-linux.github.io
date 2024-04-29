@@ -49,3 +49,19 @@ SHA512: 96135a85ee99e9f2b00b612128c84f78c11ec8fd2b535897d3cc109fb0a9126c59c13d50
 Description: command-line tools
  A collection of useful command-line tools and their default configuration
 
+Package: lmd-desktop
+Architecture: all
+Version: 1.2
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 9
+Depends: dbus-broker, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-plugins-ugly, i965-va-driver-shaders, intel-media-va-driver-non-free, lmd-cmdline, lmd-minimal, lmd-update, network-manager, pipewire-audio, sudo, unrar, unzip
+Filename: pool/testing/all/lmd-desktop_1.2_all.deb
+Size: 1668
+MD5sum: 9d078fd75b052796c79251cb33c1b41e
+SHA1: ba521bf90a34ab80701609785a84c70cdbe8cd32
+SHA256: bea9cd65004821f40c5f4dfd5f0eef08c6d4f2d28939a1b4eaac1ce6f4df6f5f
+SHA512: e2f2cb4d728b1cf72d725c52a4da7f981214ec14f2ad23dc25550447cd4888a95196ac3adfbe4f4c99f4bdba9cd12c4e83363f1b2f6d7733db999591a4f8aad4
+Description: Packages for lmd Linux desktop
+
