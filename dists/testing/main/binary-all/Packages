@@ -65,6 +65,22 @@ SHA256: bea9cd65004821f40c5f4dfd5f0eef08c6d4f2d28939a1b4eaac1ce6f4df6f5f
 SHA512: e2f2cb4d728b1cf72d725c52a4da7f981214ec14f2ad23dc25550447cd4888a95196ac3adfbe4f4c99f4bdba9cd12c4e83363f1b2f6d7733db999591a4f8aad4
 Description: Packages for lmd Linux desktop
 
+Package: lmd-gaming-i386
+Architecture: all
+Version: 1
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 9
+Depends: gstreamer1.0-plugins-bad:i386, gstreamer1.0-plugins-base:i386, gstreamer1.0-plugins-good:i386, gstreamer1.0-plugins-ugly:i386, mangohud:i386
+Filename: pool/testing/all/lmd-gaming-i386_1_all.deb
+Size: 1600
+MD5sum: 07cc6b9a59a05c35bc30c68669d781c9
+SHA1: 168a706b456a08526ab9650bebeb20ad367e2785
+SHA256: 309a006433833c71de72c2a318077499e51d1419dacc5940b29cf4791bb15db2
+SHA512: 5b95917a915d1ddcd8a821c578dd5994d627465e360091e07102b5062a92685f87722dd42e3b7f5f3a9e18f2b92b061e92e77f27da4d39f2c99bb9f5fc0dd9d3
+Description: Additional i386 dependencies for lmd-gaming
+
 Package: lmd-xfce
 Architecture: all
 Version: 1.1
