@@ -1,100 +1,16 @@
-Package: gpd-win2
-Architecture: all
-Version: 1
-Priority: important
-Section: misc
-Maintainer: lmd Linux <lmd.linux@gmail.com>
-Installed-Size: 16
-Depends: lmd-minimal, tlp
-Filename: pool/testing/all/gpd-win2_1_all.deb
-Size: 2164
-MD5sum: 54d2324bffd67e088c4204e976a6aeea
-SHA1: 871b184bdc85d94caeb6ae44a6902dc3c35593a2
-SHA256: 6defa69e444083f389f8c33b8a7e2c03382e8c0707be553a0ab59d97893e495c
-SHA512: 662bc31da757f4487782c70d9c350515511a947e9edc7b3511f1f2b7d20f61fcf44f9c84f285b7b49997bcb6a32dd97b8067503d17c96597842088262b727602
-Description: Packages and configurations for the GPD Win 2
- Packages and configuration for a minimal lmd Linux installation
-
-Package: gpd-win
-Architecture: all
-Version: 1.2
-Priority: important
-Section: misc
-Maintainer: lmd Linux <lmd.linux@gmail.com>
-Installed-Size: 31
-Depends: firmware-intel-sound, lmd-minimal, tlp
-Filename: pool/testing/all/gpd-win_1.2_all.deb
-Size: 5628
-MD5sum: 52ece00e6d1d482f860d931061b931a7
-SHA1: 73a608e6cc0a29d853b661887b3a36b6c62972be
-SHA256: 9224f03f8bcbc91f5bd86f7b1388249a51b80a5a498fb98a7115b12dd823f5f8
-SHA512: 0f3ae5215ec9e8f36550a80e9feac9a5d2a0f0d339050b0c8329679a46af6686ca2b257f0837f139ef96c7e87c0e4883b9918c991764feb5556e4c1db005e05e
-Description: Packages and configurations for the GPD Pocket
- Packages and configuration for a minimal lmd Linux installation
-
-Package: lmd-cmdline
-Architecture: all
-Version: 1.2
-Priority: important
-Section: misc
-Maintainer: lmd Linux <lmd.linux@gmail.com>
-Installed-Size: 19
-Depends: bash-completion, git, man, powerline, powerline-gitstatus, tmux, vim-addon-manager, vim-nox
-Filename: pool/testing/all/lmd-cmdline_1.2_all.deb
-Size: 2700
-MD5sum: 71a0d682d9192ad8e3ca65106f18e4f2
-SHA1: 6481ede8712416fde7bbdf3343cc074eff04cd91
-SHA256: 30d383b6ca587bee626c3a3a0a31e8c4f511670e0ebf609e9f49b0eecd327f36
-SHA512: 96135a85ee99e9f2b00b612128c84f78c11ec8fd2b535897d3cc109fb0a9126c59c13d5030857f01b2228eaa5cd487f2999c947b7484fd92d12978fc5a64d78a
-Description: command-line tools
- A collection of useful command-line tools and their default configuration
-
 Package: lmd-desktop
 Architecture: all
-Version: 1.2
+Version: 1.3
 Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
 Installed-Size: 9
-Depends: dbus-broker, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-plugins-ugly, gvfs-fuse, i965-va-driver-shaders, intel-media-va-driver-non-free, lmd-cmdline, lmd-minimal, lmd-update, network-manager, pipewire-audio, sudo, unrar, unzip
-Filename: pool/testing/all/lmd-desktop_1.2_all.deb
-Size: 1672
-MD5sum: 9faba2d036180180562068bac5b4e1eb
-SHA1: a2b9f32c3a93b0ab49c2654631036bdd597aa4df
-SHA256: 184c3fc05977812c63f5b08bc9dfde2bd16b3af5659d737dfe94958e66d5bfb3
-SHA512: 7c33600278cc1413cce6a940aa50c5e9b3830c9fea8195360b45c1f86811f05ea160f7f32812f81e4ba6f0a49e95faa36137c03e75f85d240a8e525ee75ca387
+Depends: dbus-broker, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-plugins-ugly, gvfs-backends, gvfs-fuse, i965-va-driver-shaders, intel-media-va-driver-non-free, lmd-cmdline, lmd-minimal, lmd-update, network-manager, pipewire-audio, sudo, unrar, unzip
+Filename: pool/testing/all/lmd-desktop_1.3_all.deb
+Size: 1684
+MD5sum: 3bb15ecb2565ab597bca8ee45367f4b3
+SHA1: 4535a1d1d466e2a371d12ff6131f6c3a49975c8f
+SHA256: 4b933c0fb59811fd4fa0f4f4b543ca44b0a0da93d2c4fe9c575d8ff0bf4b2274
+SHA512: c912d45ea910be35040dc943aa332466df91eec5955f12a648893d42f87de0f74d238564af1a9ee0bf364bccd0a221165a4207aab2a6199066229cf9d2f6e257
 Description: Packages for lmd Linux desktop
-
-Package: lmd-gaming-i386
-Architecture: all
-Version: 1
-Priority: important
-Section: misc
-Maintainer: lmd Linux <lmd.linux@gmail.com>
-Installed-Size: 9
-Depends: gstreamer1.0-plugins-bad:i386, gstreamer1.0-plugins-base:i386, gstreamer1.0-plugins-good:i386, gstreamer1.0-plugins-ugly:i386, mangohud:i386
-Filename: pool/testing/all/lmd-gaming-i386_1_all.deb
-Size: 1600
-MD5sum: 07cc6b9a59a05c35bc30c68669d781c9
-SHA1: 168a706b456a08526ab9650bebeb20ad367e2785
-SHA256: 309a006433833c71de72c2a318077499e51d1419dacc5940b29cf4791bb15db2
-SHA512: 5b95917a915d1ddcd8a821c578dd5994d627465e360091e07102b5062a92685f87722dd42e3b7f5f3a9e18f2b92b061e92e77f27da4d39f2c99bb9f5fc0dd9d3
-Description: Additional i386 dependencies for lmd-gaming
-
-Package: lmd-xfce
-Architecture: all
-Version: 1.1
-Priority: important
-Section: misc
-Maintainer: lmd Linux <lmd.linux@gmail.com>
-Installed-Size: 63
-Depends: blueman, elementary-xfce-icon-theme, galculator, greybird-gtk-theme, light-locker, lightdm-gtk-greeter, lmd-desktop, menulibre, mousepad, mpv, mugshot, network-manager-gnome, pkexec, ristretto, seahorse, thunar-archive-plugin, tumbler-plugins-extra, xfce4, xfce4-notifyd, xfce4-power-manager, xfce4-screenshooter, xfce4-terminal, xfce4-whiskermenu-plugin
-Filename: pool/testing/all/lmd-xfce_1.1_all.deb
-Size: 20956
-MD5sum: d6d77576819e0cc1d20299d9ad8b774a
-SHA1: d18bb2aa88a698fe2d4f19eee404d3b5db0ffd62
-SHA256: 6bc627b38541e3634e6c212cf3c8abf3f6e9cd1149bb97a202fbf7f26e65a1de
-SHA512: 830c011c9b49dab54ca0d6052830e926f23525935cabbc66ebaab30ca65c6cd8a0420f034b32027eef2e779e3835aede32c9fa6bc020c356ffad6d1bbc0b5d36
-Description: XFCE for lmd Linux
- Collection of XFCE packages and configurations for lmd Linux
 
