@@ -1,3 +1,20 @@
+Package: lmd-minimal
+Architecture: all
+Version: 1.5
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 22
+Depends: apt-transport-https, base-files, ca-certificates, fontconfig-config, lsb-release, systemd-timesyncd
+Filename: pool/testing/all/lmd-minimal_1.5_all.deb
+Size: 2632
+MD5sum: 2e1fcfee24a2f8fdf7fc931462f7787a
+SHA1: 87b78b26f678821d1e17d5105c2ed58dc3d0a8b2
+SHA256: 8d31e67380d82ba150424bcfe35fe3a3f3345e009cb918a6c04d87c02b20e4d5
+SHA512: ce45f9434680f48d1225983e76aef647caac2909e05b73e11cf070d5137ae8f1bdd607035466bec517dec686c1e60c5e4163b313c12e74aeb06652c2bcf259cb
+Description: Minimal set of packages for lmd Linux
+ Packages and configuration for a minimal lmd Linux installation
+
 Package: lmd-xfce
 Architecture: all
 Version: 1.1
