@@ -15,3 +15,20 @@ SHA512: 13af69ffdf0ded2d013a1c75cf62774d9d141eb44a0fe65b1abaa4f9b162a3146cf225cf
 Description: XFCE for lmd Linux
  Collection of XFCE packages and configurations for lmd Linux
 
+Package: lmd-xfce
+Architecture: all
+Version: 1.2
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 63
+Depends: blueman, elementary-xfce-icon-theme, galculator, greybird-gtk-theme, light-locker, lightdm-gtk-greeter, lmd-desktop, menulibre, mousepad, mpv, mugshot, network-manager-gnome, pkexec, ristretto, seahorse, thunar-archive-plugin, tumbler-plugins-extra, xfce4, xfce4-notifyd, xfce4-power-manager, xfce4-screenshooter, xfce4-terminal, xfce4-whiskermenu-plugin
+Filename: pool/testing/all/lmd-xfce_1.2_all.deb
+Size: 20924
+MD5sum: 92220f2c3cca03e151ca44441e8c839d
+SHA1: b30865c7392388e22f754e142f9c2ec5ca576a36
+SHA256: 8b4c8b14fa877d872264412c3df41c9e4a68d839b40c10c9d1235a428d548ed5
+SHA512: c273dba60486cc07a538ac47f146d769bcf39edd9138eee866c5216b6625d5f50def3fcf8bb9b7f5777cf3e34e9127be9273060035071464202aade4224dc304
+Description: XFCE for lmd Linux
+ Collection of XFCE packages and configurations for lmd Linux
+
