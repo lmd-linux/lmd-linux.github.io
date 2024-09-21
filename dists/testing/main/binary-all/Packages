@@ -1,16 +1,17 @@
-Package: lmd-desktop
+Package: lmd-xfce
 Architecture: all
-Version: 1.3
+Version: 1.1
 Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
-Installed-Size: 9
-Depends: dbus-broker, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-plugins-ugly, gvfs-backends, gvfs-fuse, i965-va-driver-shaders, intel-media-va-driver-non-free, lmd-cmdline, lmd-minimal, lmd-update, network-manager, pipewire-audio, sudo, unrar, unzip
-Filename: pool/testing/all/lmd-desktop_1.3_all.deb
-Size: 1684
-MD5sum: 3bb15ecb2565ab597bca8ee45367f4b3
-SHA1: 4535a1d1d466e2a371d12ff6131f6c3a49975c8f
-SHA256: 4b933c0fb59811fd4fa0f4f4b543ca44b0a0da93d2c4fe9c575d8ff0bf4b2274
-SHA512: c912d45ea910be35040dc943aa332466df91eec5955f12a648893d42f87de0f74d238564af1a9ee0bf364bccd0a221165a4207aab2a6199066229cf9d2f6e257
-Description: Packages for lmd Linux desktop
+Installed-Size: 63
+Depends: blueman, elementary-xfce-icon-theme, galculator, greybird-gtk-theme, light-locker, lightdm-gtk-greeter, lmd-desktop, menulibre, mousepad, mpv, mugshot, network-manager-gnome, pkexec, ristretto, seahorse, thunar-archive-plugin, tumbler-plugins-extra, xfce4, xfce4-notifyd, xfce4-power-manager, xfce4-screenshooter, xfce4-terminal, xfce4-whiskermenu-plugin
+Filename: pool/testing/all/lmd-xfce_1.1_all.deb
+Size: 20944
+MD5sum: 7bcd6e1c1099b71834fc37a9b91e6b74
+SHA1: dc59ea4544c396802cf147f491fb1f9f39bcb365
+SHA256: f4a4c1348e1c6ac8a7e14254b86cd2a2448c6d3aaebdfd74139ce21c618d7466
+SHA512: 13af69ffdf0ded2d013a1c75cf62774d9d141eb44a0fe65b1abaa4f9b162a3146cf225cf562b893df510239e5e388527f90d84bec604157ad67a0fc2f16e0f78
+Description: XFCE for lmd Linux
+ Collection of XFCE packages and configurations for lmd Linux
 
