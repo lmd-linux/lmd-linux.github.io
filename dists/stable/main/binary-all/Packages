@@ -152,18 +152,18 @@ Description: Japanese input for lmd Linux
 
 Package: lmd-minimal
 Architecture: all
-Version: 1.4
+Version: 1.5
 Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
 Installed-Size: 22
 Depends: apt-transport-https, base-files, ca-certificates, fontconfig-config, lsb-release, systemd-timesyncd
-Filename: pool/stable/all/lmd-minimal_1.4_all.deb
-Size: 2620
-MD5sum: 33b1562dd80bc5bac55d325f37994783
-SHA1: 2b0ccc42f5b9297056050c66722709011acb5565
-SHA256: 63d30d0a8b6c629d822ca371ac952bab6222de35db384bd26a398841dbc58a6c
-SHA512: 24d4dd98ab1f53b51b47e423c4392b649e57187622472c3f405e6d4618af23b9fa69654b62015705678e7f475267ed4b9fa30da1c787e82993ff8f6fcce0aff5
+Filename: pool/stable/all/lmd-minimal_1.5_all.deb
+Size: 2632
+MD5sum: 2e1fcfee24a2f8fdf7fc931462f7787a
+SHA1: 87b78b26f678821d1e17d5105c2ed58dc3d0a8b2
+SHA256: 8d31e67380d82ba150424bcfe35fe3a3f3345e009cb918a6c04d87c02b20e4d5
+SHA512: ce45f9434680f48d1225983e76aef647caac2909e05b73e11cf070d5137ae8f1bdd607035466bec517dec686c1e60c5e4163b313c12e74aeb06652c2bcf259cb
 Description: Minimal set of packages for lmd Linux
  Packages and configuration for a minimal lmd Linux installation
 
@@ -222,18 +222,18 @@ Description: automatic updates for lmd Linux
 
 Package: lmd-xfce
 Architecture: all
-Version: 1.1
+Version: 1.2
 Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
 Installed-Size: 63
 Depends: blueman, elementary-xfce-icon-theme, galculator, greybird-gtk-theme, light-locker, lightdm-gtk-greeter, lmd-desktop, menulibre, mousepad, mpv, mugshot, network-manager-gnome, pkexec, ristretto, seahorse, thunar-archive-plugin, tumbler-plugins-extra, xfce4, xfce4-notifyd, xfce4-power-manager, xfce4-screenshooter, xfce4-terminal, xfce4-whiskermenu-plugin
-Filename: pool/stable/all/lmd-xfce_1.1_all.deb
-Size: 20956
-MD5sum: d6d77576819e0cc1d20299d9ad8b774a
-SHA1: d18bb2aa88a698fe2d4f19eee404d3b5db0ffd62
-SHA256: 6bc627b38541e3634e6c212cf3c8abf3f6e9cd1149bb97a202fbf7f26e65a1de
-SHA512: 830c011c9b49dab54ca0d6052830e926f23525935cabbc66ebaab30ca65c6cd8a0420f034b32027eef2e779e3835aede32c9fa6bc020c356ffad6d1bbc0b5d36
+Filename: pool/stable/all/lmd-xfce_1.2_all.deb
+Size: 20924
+MD5sum: 92220f2c3cca03e151ca44441e8c839d
+SHA1: b30865c7392388e22f754e142f9c2ec5ca576a36
+SHA256: 8b4c8b14fa877d872264412c3df41c9e4a68d839b40c10c9d1235a428d548ed5
+SHA512: c273dba60486cc07a538ac47f146d769bcf39edd9138eee866c5216b6625d5f50def3fcf8bb9b7f5777cf3e34e9127be9273060035071464202aade4224dc304
 Description: XFCE for lmd Linux
  Collection of XFCE packages and configurations for lmd Linux
 
