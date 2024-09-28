@@ -102,18 +102,18 @@ Description: command-line tools
 
 Package: lmd-desktop
 Architecture: all
-Version: 1.3
+Version: 1.4
 Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
 Installed-Size: 9
-Depends: dbus-broker, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-plugins-ugly, gvfs-backends, gvfs-fuse, i965-va-driver-shaders, intel-media-va-driver-non-free, lmd-cmdline, lmd-minimal, lmd-update, network-manager, pipewire-audio, sudo, unrar, unzip
-Filename: pool/stable/all/lmd-desktop_1.3_all.deb
-Size: 1684
-MD5sum: 3bb15ecb2565ab597bca8ee45367f4b3
-SHA1: 4535a1d1d466e2a371d12ff6131f6c3a49975c8f
-SHA256: 4b933c0fb59811fd4fa0f4f4b543ca44b0a0da93d2c4fe9c575d8ff0bf4b2274
-SHA512: c912d45ea910be35040dc943aa332466df91eec5955f12a648893d42f87de0f74d238564af1a9ee0bf364bccd0a221165a4207aab2a6199066229cf9d2f6e257
+Depends: dbus-broker, fonts-noto, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-plugins-ugly, gvfs-backends, gvfs-fuse, i965-va-driver-shaders, intel-media-va-driver-non-free, lmd-cmdline, lmd-minimal, lmd-update, network-manager, pipewire-audio, sudo, unrar, unzip
+Filename: pool/stable/all/lmd-desktop_1.4_all.deb
+Size: 1680
+MD5sum: 031c5e5b790a6c8d3e3e489b1dd43496
+SHA1: 646151e1415cd64781df52007a64879aff58e407
+SHA256: 4e0bb30b164c3acaae62a32a9cef3afad5a1640287fdd1333abb7522240be973
+SHA512: 24e48efef0f117290d8460eaf1fe4c4ebfe57811a1f4e628ae8b19a0aa4130249b9f0acc3ad0c0ed4185f65126fdd6e8bc665ba8e7672063f8a274ac2c9cabf8
 Description: Packages for lmd Linux desktop
 
 Package: lmd-gaming-i386
