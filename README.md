@@ -39,12 +39,6 @@ Not Lmd, nor LMD. Just `lmd`.
    patient.
 
 
-# On your first boot
-
-Log in normally, then reboot immediately. There is a yet unidentified issue between Google Chrome
-and GNOME Keyring which makes the system hang at shutdown. All will be fine after that.
-
-
 # Optional packages
 
 ## Google Chrome
