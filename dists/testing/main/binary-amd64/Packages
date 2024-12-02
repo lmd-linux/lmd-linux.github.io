@@ -1,0 +1,18 @@
+Package: lmd-gaming
+Architecture: amd64
+Version: 1.4
+Priority: important
+Section: misc
+Maintainer: lmd Linux <lmd.linux@gmail.com>
+Installed-Size: 3021
+Depends: gamemode, lmd-desktop, mangohud, mesa-utils, protontricks, retroarch, steam-installer
+Recommends: lmd-gaming-i386
+Filename: pool/testing/amd64/lmd-gaming_1.4_amd64.deb
+Size: 1067260
+MD5sum: 43d9bbfd1897964addaffe943ca67995
+SHA1: d3211fa5854be2cd211557e0ba487f55e280110d
+SHA256: 261354e2f9516e4d525dbc62a0283d5fa76ab54f11ec7cf7a8d96b3f49e77eaf
+SHA512: b97ed5b63b98a6aece89486dcd15e3fe4671823f98dc433555e8520bf30acabe4352e0dcc2d0db5d70f25ed4025b280db4cc50e711bb43ea3b58db95bef1d883
+Description: Gaming metapackage for lmd Linux
+ Collection of gaming packages and configurations for lmd Linux
+
