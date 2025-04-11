@@ -14,8 +14,9 @@ Not Lmd, nor LMD. Just `lmd`.
 
 `lmd` Linux multiboots just fine. Make sure to install it last for best results.
 
-1. Copy [this ISO image](https://drive.google.com/file/d/1UEJ5a6xcU3RaSL5abFUbCUy7QUY_4UrJ) to a USB
-   stick and boot it.
+1. Copy
+   [this ISO image](https://github.com/lmd-linux/install-iso/releases/download/2025-04-06/lmd-amd64.iso)
+   to a USB stick and boot it.
 
 2. Choose your location and language, connect to the internet (required, the image should have all
    the WiFi firmware you need, in case everything fails USB-tethering a smartphone always works),
