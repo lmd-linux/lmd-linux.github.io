@@ -152,18 +152,18 @@ Description: Japanese input for lmd Linux
 
 Package: lmd-minimal
 Architecture: all
-Version: 1.6
+Version: 2.0
 Priority: important
 Section: misc
 Maintainer: lmd Linux <lmd.linux@gmail.com>
 Installed-Size: 22
 Depends: apt-transport-https, base-files, ca-certificates, fontconfig-config, lsb-release, systemd-timesyncd
-Filename: pool/stable/all/lmd-minimal_1.6_all.deb
-Size: 2624
-MD5sum: b4a1ecb1f5558a750d420c5fd79b35d7
-SHA1: 063e307076d34599e3b8e7931dc8860f370105d4
-SHA256: b91241f9b85ebd0e58b0573941b0d2be1a0fe0a4cc1ae0471c0f0800db5097fd
-SHA512: fb6d861d0fea45eaffb3e8908f875dd76c4b494530285c5d1d5356f5268cacc808a5cfe674b72aebbf8161440c92c56310cab55a77277cbbd44fcc10740245bc
+Filename: pool/stable/all/lmd-minimal_2.0_all.deb
+Size: 2628
+MD5sum: fb2835137bdfd61dc3f754f82279f64d
+SHA1: c62af45a6ee5b1c8d3feec91b446b5be2a148d77
+SHA256: 3daed8a6344c059413a826663d14347a3c73d7d94f71888f2e9f1e22ccc38583
+SHA512: 915385b3c67dcfd62d3713c3e46ea2434d94fec2cbc96e854f7db80c8b1867f70e9b786d98d84f6fbaf212aa595ffee55b07901b05772992cb27e958bf50fa49
 Description: Minimal set of packages for lmd Linux
  Packages and configuration for a minimal lmd Linux installation
 
